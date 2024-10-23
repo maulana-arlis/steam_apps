@@ -44,8 +44,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                     },
                     child: Card(
                       color: _selectedCardIndex == 0
-                          ? Colors
-                              .lightBlue[100] // Warna background saat dipilih
+                          ? AppColors.bgColors // Warna background saat dipilih
                           : AppColors.bgColors, // Warna default
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -93,8 +92,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                     },
                     child: Card(
                       color: _selectedCardIndex == 1
-                          ? Colors
-                              .lightBlue[100] // Warna background saat dipilih
+                          ? AppColors.bgColors // Warna background saat dipilih
                           : AppColors.bgColors, // Warna default
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -142,8 +140,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                     },
                     child: Card(
                       color: _selectedCardIndex == 2
-                          ? Colors
-                              .lightBlue[100] // Warna background saat dipilih
+                          ? AppColors.bgColors // Warna background saat dipilih
                           : AppColors.bgColors, // Warna default
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
