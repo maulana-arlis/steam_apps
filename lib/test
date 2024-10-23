@@ -1,0 +1,115 @@
+import 'package:flutter/material.dart';
+import '../../core/constants/colors.dart';
+import '../../core/constants/images.dart';
+
+class ProfileScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.appColors,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              const SizedBox(height: 40), // Jarak dari atas layar
+
+              // Menggunakan Stack untuk banner dan avatar
+              Stack(
+                alignment:
+                    Alignment.center, // Memposisikan avatar di tengah banner
+                children: [
+                  // Banner Gambar di belakang
+                  Container(
+                    height: 120, // Ukuran banner
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: const DecorationImage(
+                        image: AssetImage(
+                            'assets/images/banner.jpg'), // Path gambar banner
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  // Avatar di depan dan sedikit menimpa banner
+                  Positioned(
+                    top:
+                        60, // Posisi avatar agar menimpa banner (disesuaikan dengan tinggi banner)
+                    child: CircleAvatar(
+                      radius: 45,
+                      backgroundImage:
+                          const AssetImage('assets/images/avatar.jpg'),
+                      backgroundColor: Colors.grey[
+                          800], // Warna latar belakang jika gambar tidak ada
+                    ),
+                  ),
+                ],
+              ),
+
+              const SizedBox(
+                  height: 60), // Jarak antara avatar dan konten berikutnya
+
+              // Nama dan tombol edit
+              Center(
+                child: Column(
+                  children: [
+                    const Text(
+                      'Maulana Arlis',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(
+                        height: 8), // Jarak antara nama dan teks baru
+                    const Text(
+                      'Admin', // Teks tambahan
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: 16,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        // Aksi untuk tombol edit
+                      },
+                      child: const Text(
+                        'Edit',
+                        style: TextStyle(color: Colors.blueAccent),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 24),
+
+              // Badge, Games, Friends
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ProfileStat(title: 'Badges', value: '72'),
+                  ProfileStat(title: 'Games', value: '84'),
+                  ProfileStat(title: 'Friends', value: '15'),
+                ],
+              ),
+              const SizedBox(height: 24),
+
+              // Recent Played
+              SectionTitle(title: 'RECENT PLAYED'),
+              const SizedBox(height: 16),
+              ProfileGamesGrid(),
+
+              // Favorites
+              const SizedBox(height: 24),
+              SectionTitle(title: 'FAVORITES'),
+              const SizedBox(height: 16),
+              ProfileGamesGrid(),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
