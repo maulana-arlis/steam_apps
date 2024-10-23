@@ -44,7 +44,7 @@ class ShopHistoryScreen extends StatelessWidget {
               date: "5 NOV 2024",
               title: "Outlast II",
               subtitle: "Steam Wallet",
-              price: "R\$ 45.50",
+              price: "\$ 45.50",
               iconPath: Icons
                   .account_balance_wallet, // Ganti dengan gambar atau ikon yang diinginkan
             ),
