@@ -46,8 +46,7 @@ class _MoreScreenState extends State<MoreScreen> {
             _buildListItem(1, Icons.menu, 'Library Games', () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => const LibraryGamesScreen()),
+                MaterialPageRoute(builder: (context) => LibraryGamesScreen()),
               );
             }),
             _buildListItem(2, Icons.lock, 'Account Security', () {
