@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/more/shop_history.dart';
 import '../widgets/more/library_games.dart';
 import '../widgets/more/account_security.dart';
-import '../widgets/more/share_family.dart';
+import '../widgets/more/friend_list.dart';
 import '../widgets/more/payment_method.dart';
 import '../widgets/more/contact_detail.dart';
 import '../../core/constants/colors.dart';
@@ -58,11 +58,11 @@ class _MoreScreenState extends State<MoreScreen> {
                     builder: (context) => const AccountSecurityScreen()),
               );
             }),
-            _buildListItem(3, Icons.group, 'Share and Family', () {
+            _buildListItem(3, Icons.group, 'Friend List', () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const ShareFamilyScreen()),
+                    builder: (context) => const FriendListScreen()),
               );
             }),
             _buildListItem(4, Icons.payment, 'Payment Method', () {

@@ -34,7 +34,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     const Text(
-                      'Admin',
+                      'Rytex',
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
