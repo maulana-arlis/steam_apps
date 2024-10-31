@@ -21,3 +21,20 @@ flutter:
 
     assets:
         - assets/images/
+        - assets/media/forza/
+        - assets/media/stray/
+        - assets/media/rdr/
+        - assets/media/eldenring/
+        - assets/media/exodus/
+        - assets/media/wildlands/
+        - assets/media/breakpoint/
+        - assets/media/readyornot/
+        - assets/media/watchdogs/
+        - assets/media/watchdogs2/
+        - assets/media/outlast/
+        - assets/media/outlast2/
+        - assets/media/farcry3/
+        - assets/media/farcry4/
+        - assets/media/farcry5/
+        - assets/media/dyinglight/
+        - assets/media/dyinglight2/

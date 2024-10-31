@@ -1,64 +1,61 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import '../../../core/constants/colors.dart'; // Pastikan AppColors sudah diatur
+import '../../../core/constants/colors.dart';
 
 class PaymentMethodScreen extends StatefulWidget {
   const PaymentMethodScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _PaymentMethodScreenState createState() => _PaymentMethodScreenState();
 }
 
 class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
-  // Variabel untuk menyimpan kartu yang sedang dipilih
   int? _selectedCardIndex;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.bgColors, // Warna background AppBar
+        backgroundColor: AppColors.bgColors,
         title: const Text(
           'Payment Methods',
-          style: TextStyle(color: Colors.white), // Warna teks title
+          style: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.white, // Warna ikon panah "back"
+          color: Colors.white,
         ),
       ),
-      backgroundColor: AppColors.appColors, // Warna background halaman
+      backgroundColor: AppColors.appColors,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Menggunakan Flexible agar tidak menekan tombol terlalu ke bawah
             Flexible(
               child: Column(
                 children: [
-                  // Card untuk Mastercard
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _selectedCardIndex = 0; // Setel index saat ditekan
+                        _selectedCardIndex = 0;
                       });
                     },
                     child: Card(
                       color: _selectedCardIndex == 0
-                          ? AppColors.bgColors // Warna background saat dipilih
-                          : AppColors.bgColors, // Warna default
+                          ? AppColors.bgColors
+                          : AppColors.bgColors,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        // Hanya border biru saat ditekan, tanpa border default
                         side: _selectedCardIndex == 0
                             ? const BorderSide(
-                                color: Colors.blue, // Border biru saat dipilih
+                                color: Colors.blue,
                                 width: 1.5,
                               )
                             : BorderSide.none,
                       ),
                       child: ListTile(
                         leading: const Icon(
-                          FontAwesomeIcons.ccMastercard, // Ikon Mastercard
+                          FontAwesomeIcons.ccMastercard,
                           color: Colors.blue,
                           size: 40,
                         ),
@@ -66,16 +63,16 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                           '**** **** **** 5967',
                           style: TextStyle(
                             color: _selectedCardIndex == 0
-                                ? Colors.blue // Warna teks saat dipilih
-                                : Colors.white, // Warna default
+                                ? Colors.blue
+                                : Colors.white,
                           ),
                         ),
                         subtitle: Text(
                           'Expires 09/25',
                           style: TextStyle(
                             color: _selectedCardIndex == 0
-                                ? Colors.blue // Warna teks saat dipilih
-                                : Colors.white, // Warna default
+                                ? Colors.blue
+                                : Colors.white,
                           ),
                         ),
                       ),
@@ -87,26 +84,25 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _selectedCardIndex = 1; // Setel index saat ditekan
+                        _selectedCardIndex = 1;
                       });
                     },
                     child: Card(
                       color: _selectedCardIndex == 1
-                          ? AppColors.bgColors // Warna background saat dipilih
-                          : AppColors.bgColors, // Warna default
+                          ? AppColors.bgColors
+                          : AppColors.bgColors,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        // Hanya border biru saat ditekan, tanpa border default
                         side: _selectedCardIndex == 1
                             ? const BorderSide(
-                                color: Colors.blue, // Border biru saat dipilih
+                                color: Colors.blue,
                                 width: 1.5,
                               )
                             : BorderSide.none,
                       ),
                       child: ListTile(
                         leading: const Icon(
-                          FontAwesomeIcons.ccVisa, // Ikon Visa
+                          FontAwesomeIcons.ccVisa,
                           color: Colors.blue,
                           size: 40,
                         ),
@@ -114,16 +110,16 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                           '**** **** **** 3802',
                           style: TextStyle(
                             color: _selectedCardIndex == 1
-                                ? Colors.blue // Warna teks saat dipilih
-                                : Colors.white, // Warna default
+                                ? Colors.blue
+                                : Colors.white,
                           ),
                         ),
                         subtitle: Text(
                           'Expires 10/27',
                           style: TextStyle(
                             color: _selectedCardIndex == 1
-                                ? Colors.blue // Warna teks saat dipilih
-                                : Colors.white, // Warna default
+                                ? Colors.blue
+                                : Colors.white,
                           ),
                         ),
                       ),
@@ -135,26 +131,25 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                   InkWell(
                     onTap: () {
                       setState(() {
-                        _selectedCardIndex = 2; // Setel index saat ditekan
+                        _selectedCardIndex = 2;
                       });
                     },
                     child: Card(
                       color: _selectedCardIndex == 2
-                          ? AppColors.bgColors // Warna background saat dipilih
-                          : AppColors.bgColors, // Warna default
+                          ? AppColors.bgColors
+                          : AppColors.bgColors,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
-                        // Hanya border biru saat ditekan, tanpa border default
                         side: _selectedCardIndex == 2
                             ? const BorderSide(
-                                color: Colors.blue, // Border biru saat dipilih
+                                color: Colors.blue,
                                 width: 1.5,
                               )
                             : BorderSide.none,
                       ),
                       child: ListTile(
                         leading: const Icon(
-                          FontAwesomeIcons.paypal, // Ikon PayPal
+                          FontAwesomeIcons.paypal,
                           color: Colors.blue,
                           size: 40,
                         ),
@@ -162,8 +157,8 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                           'arlis@steampowered.com',
                           style: TextStyle(
                             color: _selectedCardIndex == 2
-                                ? Colors.blue // Warna teks saat dipilih
-                                : Colors.white, // Warna default
+                                ? Colors.blue
+                                : Colors.white,
                           ),
                         ),
                       ),
@@ -173,19 +168,13 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                 ],
               ),
             ),
-
-            // Spacer untuk memberi sedikit jarak sebelum tombol
             const SizedBox(height: 20),
-
-            // Tombol Add Payment Method tidak terlalu ke bawah
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {
-                  // Action ketika tombol ditekan
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, // Warna tombol
+                  backgroundColor: Colors.blue,
                   padding: const EdgeInsets.all(15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -194,7 +183,7 @@ class _PaymentMethodScreenState extends State<PaymentMethodScreen> {
                 child: const Text(
                   'ADD PAYMENT METHOD',
                   style: TextStyle(
-                    color: Colors.white, // Warna teks tombol
+                    color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),

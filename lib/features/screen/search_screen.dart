@@ -5,14 +5,13 @@ class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _SearchScreenState createState() => _SearchScreenState();
 }
 
 class _SearchScreenState extends State<SearchScreen> {
-  // Index untuk menyimpan teks yang sedang ditekan
   int? selectedTextIndex;
 
-  // Daftar teks yang diinginkan
   final List<String> categories = [
     'New on Steam',
     'Shooter',
@@ -27,8 +26,7 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:
-          AppColors.appColors, // Ganti dengan warna yang diinginkan
+      backgroundColor: AppColors.appColors,
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(30.0),
@@ -36,7 +34,6 @@ class _SearchScreenState extends State<SearchScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Kotak pencarian di tengah dengan ikon pencarian
               TextField(
                 decoration: InputDecoration(
                   hintText: 'Search',
@@ -46,23 +43,17 @@ class _SearchScreenState extends State<SearchScreen> {
                     borderRadius: BorderRadius.circular(8.0),
                     borderSide: BorderSide.none,
                   ),
-                  prefixIcon:
-                      const Icon(Icons.search), // Tambahkan ikon pencarian
+                  prefixIcon: const Icon(Icons.search),
                 ),
               ),
-              // Tambahkan jarak antara search box dan teks
-              const SizedBox(
-                  height: 50), // Jarak vertikal antara kotak pencarian dan teks
-
-              // Daftar teks yang bisa ditekan
+              const SizedBox(height: 50),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: List.generate(categories.length, (index) {
                   return GestureDetector(
                     onTap: () {
                       setState(() {
-                        selectedTextIndex =
-                            index; // Hanya satu teks yang dipilih
+                        selectedTextIndex = index;
                       });
                     },
                     child: Padding(
@@ -71,12 +62,10 @@ class _SearchScreenState extends State<SearchScreen> {
                         categories[index],
                         style: TextStyle(
                           fontSize: 18,
-                          // Jika index adalah 0 (New on Steam), warna default biru, berubah putih saat ditekan
                           color: index == 0
                               ? (selectedTextIndex == index
                                   ? Colors.white
                                   : Colors.blue)
-                              // Jika bukan index 0, gunakan warna normal
                               : (selectedTextIndex == index
                                   ? Colors.blue
                                   : Colors.white),

@@ -9,18 +9,16 @@ class ContactDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors
-            .bgColors, // Maintain your custom background color for AppBar
+        backgroundColor: AppColors.bgColors,
         title: const Text(
           'Contact Detail',
-          style: TextStyle(color: Colors.white), // Title color remains white
+          style: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.white, // Change the "back" arrow color to white
+          color: Colors.white,
         ),
       ),
-      backgroundColor: AppColors
-          .appColors, // Maintain your custom background color for the page
+      backgroundColor: AppColors.appColors,
       body: SingleChildScrollView(
         // Avoid overflow by allowing scrolling
         child: Padding(

@@ -11,18 +11,19 @@ class MainMenuScreen extends StatefulWidget {
   const MainMenuScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MainMenuScreenState createState() => _MainMenuScreenState();
 }
 
 class _MainMenuScreenState extends State<MainMenuScreen> {
   int _currentIndex = 0;
-  final double _walletBalance = 92.50; // Example wallet balance
+  final double _walletBalance = 92.50;
 
   final List<Widget> _pages = [
-    const HomeScreen(), // Layar Home
-    const SearchScreen(), // Layar Search
-    const ProfileScreen(), // Layar Profile
-    const MoreScreen(), // Layar More
+    const HomeScreen(),
+    const SearchScreen(),
+    const ProfileScreen(),
+    const MoreScreen(),
   ];
 
   @override
@@ -44,12 +45,11 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
                 ),
               ),
             ),
-            // Center logo
             Expanded(
               child: Center(
                 child: Image.asset(
-                  Images.logo, // Path to the Steam logo asset
-                  height: 50, // Set appropriate size for the logo
+                  Images.logo,
+                  height: 50,
                 ),
               ),
             ),
@@ -68,14 +68,12 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
           ],
         ),
       ),
-      body: _pages[
-          _currentIndex], // Mengganti halaman berdasarkan navbar yang ditekan
+      body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
-            _currentIndex =
-                index; // Mengubah halaman sesuai indeks yang ditekan
+            _currentIndex = index;
           });
         },
         type: BottomNavigationBarType.fixed,
@@ -97,7 +95,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.more_horiz),
-            label: 'More', // Ini akan mengarahkan ke halaman More
+            label: 'More',
           ),
         ],
       ),

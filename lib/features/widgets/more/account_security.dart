@@ -5,33 +5,32 @@ class AccountSecurityScreen extends StatefulWidget {
   const AccountSecurityScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AccountSecurityScreenState createState() => _AccountSecurityScreenState();
 }
 
 class _AccountSecurityScreenState extends State<AccountSecurityScreen> {
-  bool isFaceIDEnabled = true; // Status untuk Face ID
-  bool is2FAEnabled = true; // Status untuk 2FA
+  bool isFaceIDEnabled = true;
+  bool is2FAEnabled = true;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.bgColors, // Ubah warna background AppBar
+        backgroundColor: AppColors.bgColors,
         title: const Text(
           'Account Security',
-          style: TextStyle(color: Colors.white), // Ubah warna title
+          style: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.white, // Ubah warna panah "back" menjadi putih
+          color: Colors.white,
         ),
       ),
-      backgroundColor: AppColors.appColors, // Ubah warna background halaman
+      backgroundColor: AppColors.appColors,
       body: ListView(
         children: [
-          // Face ID
           Padding(
-            padding: const EdgeInsets.symmetric(
-                vertical: 10.0), // Posisikan teks ke bawah
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: SwitchListTile(
               title: const Text(
                 'Face ID',
@@ -48,19 +47,14 @@ class _AccountSecurityScreenState extends State<AccountSecurityScreen> {
                   isFaceIDEnabled = value;
                 });
               },
-              secondary: const Icon(Icons.face,
-                  color: Colors.white), // Ubah warna icon jadi putih
+              secondary: const Icon(Icons.face, color: Colors.white),
             ),
           ),
-          const Divider(), // Garis pemisah
-
-          // Change Password
+          const Divider(),
           Padding(
-            padding: const EdgeInsets.symmetric(
-                vertical: 10.0), // Posisikan teks ke bawah
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: ListTile(
-              leading: const Icon(Icons.lock_outline,
-                  color: Colors.white), // Ubah warna icon jadi putih
+              leading: const Icon(Icons.lock_outline, color: Colors.white),
               title: const Text(
                 'Change Password',
                 style: TextStyle(color: Colors.white),
@@ -69,19 +63,14 @@ class _AccountSecurityScreenState extends State<AccountSecurityScreen> {
                 'Update your password to something you always remember',
                 style: TextStyle(color: Colors.white),
               ),
-              trailing: const Icon(Icons.arrow_forward_ios,
-                  color: Colors.white), // Ubah warna icon jadi putih
-              onTap: () {
-                // Arahkan ke halaman ubah password jika diperlukan
-              },
+              trailing:
+                  const Icon(Icons.arrow_forward_ios, color: Colors.white),
+              onTap: () {},
             ),
           ),
-          const Divider(), // Garis pemisah
-
-          // 2 Factor Authentication
+          const Divider(),
           Padding(
-            padding: const EdgeInsets.symmetric(
-                vertical: 10.0), // Posisikan teks ke bawah
+            padding: const EdgeInsets.symmetric(vertical: 10.0),
             child: SwitchListTile(
               title: const Text(
                 '2 Factor Authentication',
@@ -98,8 +87,7 @@ class _AccountSecurityScreenState extends State<AccountSecurityScreen> {
                   is2FAEnabled = value;
                 });
               },
-              secondary: const Icon(Icons.security,
-                  color: Colors.white), // Ubah warna icon jadi putih
+              secondary: const Icon(Icons.security, color: Colors.white),
             ),
           ),
         ],

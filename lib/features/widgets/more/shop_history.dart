@@ -8,45 +8,42 @@ class ShopHistoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.bgColors, // Ubah warna background AppBar
+        backgroundColor: AppColors.bgColors,
         title: const Text(
           'Shop History',
-          style: TextStyle(color: Colors.white), // Ubah warna title
+          style: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.white, // Ubah warna panah "back" menjadi putih
+          color: Colors.white,
         ),
       ),
-      backgroundColor: AppColors.appColors, // Ubah warna background halaman
+      backgroundColor: AppColors.appColors,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
             _buildHistoryCard(
               date: "12 MAR 2024",
-              title: "Assassin's Creed Mirage",
+              title: "Dying Light",
               subtitle: "Credit Card",
               price: "\$ 89.90",
-              iconPath: Icons
-                  .credit_card_outlined, // Ganti dengan gambar atau ikon yang diinginkan
+              iconPath: Icons.credit_card_outlined,
             ),
-            const SizedBox(height: 12), // Spasi antar kartu
+            const SizedBox(height: 12),
             _buildHistoryCard(
               date: "28 JUL 2024",
               title: "Metro: Exodus",
               subtitle: "Paypal",
               price: "\$ 72.25",
-              iconPath: Icons
-                  .paypal_outlined, // Ganti dengan gambar atau ikon yang diinginkan
+              iconPath: Icons.paypal_outlined,
             ),
-            const SizedBox(height: 12), // Spasi antar kartu
+            const SizedBox(height: 12),
             _buildHistoryCard(
               date: "5 NOV 2024",
               title: "Outlast II",
               subtitle: "Steam Wallet",
               price: "\$ 45.50",
-              iconPath: Icons
-                  .account_balance_wallet, // Ganti dengan gambar atau ikon yang diinginkan
+              iconPath: Icons.account_balance_wallet,
             ),
           ],
         ),
@@ -59,42 +56,33 @@ class ShopHistoryScreen extends StatelessWidget {
     required String title,
     required String subtitle,
     required String price,
-    required IconData iconPath, // Ganti dengan gambar jika diperlukan
+    required IconData iconPath,
   }) {
     return Card(
       elevation: 3,
-      color: AppColors.bgColors, // Pertahankan warna latar belakang
+      color: AppColors.bgColors,
       shape: RoundedRectangleBorder(
-        borderRadius:
-            BorderRadius.circular(8.0), // Membuat sudut kartu membulat
+        borderRadius: BorderRadius.circular(8.0),
       ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Row(
           children: [
-            // Icon atau Gambar
-            Icon(iconPath,
-                size: 40,
-                color: Colors
-                    .white), // Contoh menggunakan ikon, bisa diganti dengan Image.asset
+            Icon(iconPath, size: 40, color: Colors.white),
             const SizedBox(width: 16),
 
-            // Kolom untuk tanggal, judul, dan detail subscription
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Tanggal dan Nama
                   Text(
                     date,
                     style: const TextStyle(
-                      color: Colors
-                          .white70, // Warna teks lebih terang untuk tanggal dan nama
+                      color: Colors.white70,
                       fontSize: 14,
                     ),
                   ),
                   const SizedBox(height: 4),
-                  // Judul dan Subtitle
                   Text(
                     title,
                     style: const TextStyle(
@@ -106,7 +94,7 @@ class ShopHistoryScreen extends StatelessWidget {
                   Text(
                     subtitle,
                     style: const TextStyle(
-                      color: Colors.white70, // Warna teks subtitle lebih terang
+                      color: Colors.white70,
                       fontSize: 14,
                     ),
                   ),
@@ -130,8 +118,7 @@ class ShopHistoryScreen extends StatelessWidget {
                 const Text(
                   "Total",
                   style: TextStyle(
-                    color:
-                        Colors.white70, // Warna teks lebih terang untuk 'Total'
+                    color: Colors.white70,
                     fontSize: 14,
                   ),
                 ),

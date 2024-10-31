@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/colors.dart';
 import '../../../data/repository/repo_games.dart';
+import '../../main/game_detail_screen.dart';
 
 class LibraryGamesScreen extends StatefulWidget {
-  LibraryGamesScreen({super.key});
+  const LibraryGamesScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _LibraryGamesScreenState createState() => _LibraryGamesScreenState();
 }
 
 class _LibraryGamesScreenState extends State<LibraryGamesScreen> {
-  // List to track selected cards by index
   int? selectedIndex;
-
-  // Search filter state
   String searchQuery = "";
 
   @override
   Widget build(BuildContext context) {
-    // Filter the games based on search query
     final filteredGames = gamesRepository.where((game) {
       return game['title']!.toLowerCase().contains(searchQuery.toLowerCase());
     }).toList();
@@ -39,7 +37,6 @@ class _LibraryGamesScreenState extends State<LibraryGamesScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Search box
             Container(
               decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.1),
@@ -49,7 +46,7 @@ class _LibraryGamesScreenState extends State<LibraryGamesScreen> {
               child: TextField(
                 onChanged: (value) {
                   setState(() {
-                    searchQuery = value; // Update the search query
+                    searchQuery = value;
                   });
                 },
                 style: const TextStyle(color: Colors.white),
@@ -62,28 +59,31 @@ class _LibraryGamesScreenState extends State<LibraryGamesScreen> {
               ),
             ),
             const SizedBox(height: 16),
-
-            // Game grid
             Expanded(
               child: GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, // Number of items in a row
+                  crossAxisCount: 3,
                   crossAxisSpacing: 10,
                   mainAxisSpacing: 10,
                   childAspectRatio: 0.7,
                 ),
-                itemCount: filteredGames.length, // Use filtered games
+                itemCount: filteredGames.length,
                 itemBuilder: (context, index) {
                   final game = filteredGames[index];
-                  final isSelected =
-                      selectedIndex == index; // Check if the card is selected
+                  final isSelected = selectedIndex == index;
 
                   return GestureDetector(
                     onTap: () {
                       setState(() {
-                        selectedIndex =
-                            index; // Update the selected index on tap
+                        selectedIndex = index;
                       });
+
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => GameDetailScreen(game: game),
+                        ),
+                      );
                     },
                     child: Column(
                       children: [
@@ -91,12 +91,9 @@ class _LibraryGamesScreenState extends State<LibraryGamesScreen> {
                           child: Container(
                             decoration: BoxDecoration(
                               border: isSelected
-                                  ? Border.all(
-                                      color: Colors.blue,
-                                      width: 3.0) // Blue border if selected
+                                  ? Border.all(color: Colors.blue, width: 3.0)
                                   : Border.all(
-                                      color: Colors.transparent,
-                                      width: 3.0), // No border if not selected
+                                      color: Colors.transparent, width: 3.0),
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: ClipRRect(

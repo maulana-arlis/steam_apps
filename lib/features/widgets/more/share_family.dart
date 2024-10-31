@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart'; // Pastikan AppColors sudah diatur
+import '../../../core/constants/colors.dart';
 
 class ShareFamilyScreen extends StatelessWidget {
   const ShareFamilyScreen({super.key});
@@ -8,28 +8,26 @@ class ShareFamilyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColors.bgColors, // Warna background AppBar
+        backgroundColor: AppColors.bgColors,
         title: const Text(
           'Share and Family',
-          style: TextStyle(color: Colors.white), // Warna teks title
+          style: TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
           color: Colors.white, // Warna ikon panah "back"
         ),
       ),
-      backgroundColor: AppColors.appColors, // Warna background halaman
+      backgroundColor: AppColors.appColors,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Bagian Avatar Bulat di atas menggunakan Icon Flutter, dengan posisi di tengah
             const SizedBox(
               height: 130,
               child: Column(
                 children: [
                   Row(
-                    mainAxisAlignment:
-                        MainAxisAlignment.center, // Memusatkan avatar
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Column(
                         children: [
@@ -37,7 +35,7 @@ class ShareFamilyScreen extends StatelessWidget {
                             radius: 35,
                             backgroundColor: Colors.grey,
                             child: Icon(
-                              Icons.person, // Icon bawaan Flutter
+                              Icons.person,
                               color: Colors.white,
                               size: 40,
                             ),
@@ -56,7 +54,7 @@ class ShareFamilyScreen extends StatelessWidget {
                             radius: 35,
                             backgroundColor: Colors.grey,
                             child: Icon(
-                              Icons.person, // Icon bawaan Flutter
+                              Icons.person,
                               color: Colors.white,
                               size: 40,
                             ),
@@ -75,7 +73,7 @@ class ShareFamilyScreen extends StatelessWidget {
                             radius: 35,
                             backgroundColor: Colors.blue,
                             child: Icon(
-                              Icons.person, // Icon bawaan Flutter
+                              Icons.person,
                               color: Colors.white,
                               size: 40,
                             ),
@@ -94,7 +92,7 @@ class ShareFamilyScreen extends StatelessWidget {
                             radius: 35,
                             backgroundColor: Colors.grey,
                             child: Icon(
-                              Icons.person, // Icon bawaan Flutter
+                              Icons.person,
                               color: Colors.white,
                               size: 40,
                             ),
@@ -112,18 +110,15 @@ class ShareFamilyScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-
-            // Bagian "Family" dan ListTile untuk setiap anggota keluarga
             const Text(
               'Family Member',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
-                color: Colors.white, // Sesuaikan warna teks
+                color: Colors.white,
               ),
             ),
             const SizedBox(height: 10),
-
             Expanded(
               child: ListView(
                 children: const [
@@ -131,99 +126,95 @@ class ShareFamilyScreen extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: Colors.grey,
                       child: Icon(
-                        Icons.person, // Icon Flutter untuk avatar
+                        Icons.person,
                         color: Colors.white,
                       ),
                     ),
                     title: Text(
                       'Will',
-                      style: TextStyle(color: Colors.white), // Warna teks
+                      style: TextStyle(color: Colors.white),
                     ),
                     subtitle: Text(
                       'Adult',
-                      style: TextStyle(color: Colors.white), // Warna subtitle
+                      style: TextStyle(color: Colors.white),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios,
-                      color: Colors.white, // Warna ikon panah
+                      color: Colors.white,
                     ),
                   ),
                   ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.grey,
                       child: Icon(
-                        Icons.person, // Icon Flutter untuk avatar
+                        Icons.person,
                         color: Colors.white,
                       ),
                     ),
                     title: Text(
                       'Olivia',
-                      style: TextStyle(color: Colors.white), // Warna teks
+                      style: TextStyle(color: Colors.white),
                     ),
                     subtitle: Text(
                       'Adult',
-                      style: TextStyle(color: Colors.white), // Warna subtitle
+                      style: TextStyle(color: Colors.white),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios,
-                      color: Colors.white, // Warna ikon panah
+                      color: Colors.white,
                     ),
                   ),
                   ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.blue,
                       child: Icon(
-                        Icons.person, // Icon Flutter untuk avatar
+                        Icons.person,
                         color: Colors.white,
                       ),
                     ),
                     title: Text(
                       'Arlis (You)',
-                      style: TextStyle(color: Colors.blue), // Warna teks
+                      style: TextStyle(color: Colors.blue),
                     ),
                     subtitle: Text(
                       'Adult',
-                      style: TextStyle(color: Colors.blue), // Warna subtitle
+                      style: TextStyle(color: Colors.blue),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios,
-                      color: Colors.blue, // Warna ikon panah
+                      color: Colors.blue,
                     ),
                   ),
                   ListTile(
                     leading: CircleAvatar(
                       backgroundColor: Colors.grey,
                       child: Icon(
-                        Icons.person, // Icon Flutter untuk avatar
+                        Icons.person,
                         color: Colors.white,
                       ),
                     ),
                     title: Text(
                       'Dawn',
-                      style: TextStyle(color: Colors.white), // Warna teks
+                      style: TextStyle(color: Colors.white),
                     ),
                     subtitle: Text(
                       'Adult',
-                      style: TextStyle(color: Colors.white), // Warna subtitle
+                      style: TextStyle(color: Colors.white),
                     ),
                     trailing: Icon(
                       Icons.arrow_forward_ios,
-                      color: Colors.white, // Warna ikon panah
+                      color: Colors.white,
                     ),
                   ),
                 ],
               ),
             ),
-
-            // Tombol "Add Family" di bagian bawah
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {
-                  // Tambahkan logika saat tombol ditekan
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, // Warna tombol
+                  backgroundColor: Colors.blue,
                   padding: const EdgeInsets.all(15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
@@ -232,7 +223,7 @@ class ShareFamilyScreen extends StatelessWidget {
                 child: const Text(
                   'ADD FAMILY MEMBER',
                   style: TextStyle(
-                    color: Colors.white, // Warna teks tombol
+                    color: Colors.white,
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                   ),

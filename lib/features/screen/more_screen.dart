@@ -11,6 +11,7 @@ class MoreScreen extends StatefulWidget {
   const MoreScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MoreScreenState createState() => _MoreScreenState();
 }
 
@@ -20,13 +21,13 @@ class _MoreScreenState extends State<MoreScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.appColors, // Warna latar belakang gelap
+      backgroundColor: AppColors.appColors,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20), // Jarak dari atas
+            const SizedBox(height: 20),
             const Text(
               '   ACCOUNT DETAIL',
               style: TextStyle(
@@ -35,7 +36,7 @@ class _MoreScreenState extends State<MoreScreen> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 20), // Jarak antar item
+            const SizedBox(height: 20),
             _buildListItem(0, Icons.shopping_cart, 'Shop History', () {
               Navigator.push(
                 context,
@@ -46,7 +47,8 @@ class _MoreScreenState extends State<MoreScreen> {
             _buildListItem(1, Icons.menu, 'Library Games', () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => LibraryGamesScreen()),
+                MaterialPageRoute(
+                    builder: (context) => const LibraryGamesScreen()),
               );
             }),
             _buildListItem(2, Icons.lock, 'Account Security', () {
@@ -89,7 +91,7 @@ class _MoreScreenState extends State<MoreScreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 20), // Jarak dari bawah
+            const SizedBox(height: 20),
           ],
         ),
       ),
@@ -103,21 +105,17 @@ class _MoreScreenState extends State<MoreScreen> {
         setState(() {
           _selectedIndex = index;
         });
-        onTap(); // Panggil fungsi yang diberikan untuk onTap
+        onTap();
       },
       child: ListTile(
         leading: Icon(
           icon,
-          color: _selectedIndex == index
-              ? Colors.blue
-              : Colors.white, // Ubah warna ikon saat ditekan
+          color: _selectedIndex == index ? Colors.blue : Colors.white,
         ),
         title: Text(
           title,
           style: TextStyle(
-            color: _selectedIndex == index
-                ? Colors.blue
-                : Colors.white, // Ubah warna teks saat ditekan
+            color: _selectedIndex == index ? Colors.blue : Colors.white,
           ),
         ),
       ),

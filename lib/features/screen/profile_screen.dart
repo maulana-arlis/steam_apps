@@ -143,11 +143,74 @@ class ProfileGamesGrid extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: const [
-          GameCard(imagePath: Images.forza),
-          GameCard(imagePath: Images.readyornot),
-          GameCard(imagePath: Images.eldenring),
-          GameCard(imagePath: Images.stray),
-          GameCard(imagePath: Images.wildlands),
+          GameCard(
+            imagePath: Images.forza,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.readyornot,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.eldenring,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.exodus,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.rdr,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.stray,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.wildlands,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.breakpoint,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.watchdogs,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.watchdogs2,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.outlast,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.outlast2,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.farcry3,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.farcry4,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.farcry5,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.dyinglight,
+            showPrice: false,
+          ),
+          GameCard(
+            imagePath: Images.dyinglight2,
+            showPrice: false,
+          ),
         ],
       ),
     );

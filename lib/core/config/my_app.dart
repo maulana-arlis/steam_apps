@@ -8,9 +8,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Steam App',
-      initialRoute: RouteApp.splash, // Set the initial route
-      onGenerateRoute: RouteApp.generateRoute, // Set the routing logic
+      title: 'Steam Mobile',
+      initialRoute: RouteApp.splash,
+      onGenerateRoute: RouteApp.generateRoute,
     );
   }
 }
