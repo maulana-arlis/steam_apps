@@ -80,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               description: game.description,
                               imagePath: game.imagePath,
                               systemRequirements: game.systemRequirements,
+                              mediaImages: [],
                             ),
                           ),
                         );
@@ -121,11 +122,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => GameDetailStore(
-                                game: game,
-                                title: game.title,
-                                description: game.description,
-                                imagePath: game.imagePath,
-                                systemRequirements: game.systemRequirements),
+                              game: game,
+                              title: game.title,
+                              description: game.description,
+                              imagePath: game.imagePath,
+                              systemRequirements: game.systemRequirements,
+                              mediaImages: [],
+                            ),
                           ),
                         );
                       },
@@ -162,11 +165,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => GameDetailStore(
-                                game: game,
-                                title: game.title,
-                                description: game.description,
-                                imagePath: game.imagePath,
-                                systemRequirements: game.systemRequirements),
+                              game: game,
+                              title: game.title,
+                              description: game.description,
+                              imagePath: game.imagePath,
+                              systemRequirements: game.systemRequirements,
+                              mediaImages: [],
+                            ),
                           ),
                         );
                       },
@@ -229,11 +234,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                             builder: (context) => GameDetailStore(
-                                game: game,
-                                title: game.title,
-                                description: game.description,
-                                imagePath: game.imagePath,
-                                systemRequirements: game.systemRequirements),
+                              game: game,
+                              title: game.title,
+                              description: game.description,
+                              imagePath: game.imagePath,
+                              systemRequirements: game.systemRequirements,
+                              mediaImages: [],
+                            ),
                           ),
                         );
                       },

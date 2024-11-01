@@ -317,3 +317,26 @@ This Game may contain content not appropriate for all ages, or may not be approp
 
 ''';
 }
+
+class StoreGame {
+  static const String theforest_min = '''
+OS : Windows 7
+Processor: Intel Dual-Core 2.4 GHz
+Memory: 4 GB RAM
+Graphics: NVIDIA GeForce 8800GT
+DirectX: Version 9.0
+Storage: 5 GB available space
+Sound Card: DirectX®-compatible
+VR Support: SteamVR or Oculus PC
+Additional Notes: 32bit windows users need to ensure they have at least 4gb of ram usable on their system.
+''';
+  static const String theforest_rec = '''
+OS : Windows 7
+Processor: Quad Core Processor
+Memory: 4 GB RAM
+Graphics: NVIDIA GeForce GTX 560
+DirectX: Version 9.0
+Storage: 5 GB available space
+Sound Card: DirectX®-compatible
+''';
+}

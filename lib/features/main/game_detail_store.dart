@@ -7,6 +7,7 @@ class GameDetailStore extends StatefulWidget {
   final String description;
   final String imagePath;
   final List<String> systemRequirements;
+  final List<String> mediaImages; // Tambahkan parameter ini
 
   const GameDetailStore({
     super.key,
@@ -14,7 +15,8 @@ class GameDetailStore extends StatefulWidget {
     required this.description,
     required this.imagePath,
     required this.systemRequirements,
-    required Game game,
+    required this.mediaImages,
+    required Game game, // Tambahkan parameter ini
   });
 
   @override
@@ -37,7 +39,7 @@ class _GameDetailStoreState extends State<GameDetailStore> {
             color: Colors.white,
           ),
           onPressed: () {
-            Navigator.of(context).pop(); // Go back to the previous screen
+            Navigator.of(context).pop();
           },
         ),
         title: const Text(
@@ -54,7 +56,6 @@ class _GameDetailStoreState extends State<GameDetailStore> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Game image and title
               Center(
                 child: Column(
                   children: [
@@ -76,8 +77,6 @@ class _GameDetailStoreState extends State<GameDetailStore> {
                 ),
               ),
               const SizedBox(height: 20),
-
-              // Tabs for About, Media, Analysis
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -87,48 +86,14 @@ class _GameDetailStoreState extends State<GameDetailStore> {
                 ],
               ),
               const SizedBox(height: 15),
-
-              // Content based on selected tab
               if (selectedTab == 0) ...[
                 Text(
                   widget.description,
                   style: const TextStyle(color: Colors.white, fontSize: 16),
                 ),
-                const SizedBox(height: 15),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        "More About this Game >",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ),
-                  ],
-                ),
                 const SizedBox(height: 30),
-
-                // System Requirements - Only shown in About tab
-                const Text(
-                  "SYSTEM REQUIREMENTS",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                _buildRequirement("Minimum"),
-                const SizedBox(height: 10),
-                _buildRequirement("Recommended"),
               ] else if (selectedTab == 1) ...[
-                const Center(
-                  child: Text(
-                    'Media content goes here.',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                _buildMediaTab(), // Panggil method untuk menampilkan media
               ] else if (selectedTab == 2) ...[
                 const Center(
                   child: Text(
@@ -170,19 +135,22 @@ class _GameDetailStoreState extends State<GameDetailStore> {
     );
   }
 
-  Widget _buildRequirement(String label) {
-    return Row(
-      children: [
-        Icon(
-          label == "Minimum" ? Icons.zoom_out : Icons.zoom_in,
-          color: Colors.white,
-        ),
-        const SizedBox(width: 8),
-        Text(
-          label,
-          style: const TextStyle(color: Colors.white, fontSize: 14),
-        ),
-      ],
+  Widget _buildMediaTab() {
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        crossAxisSpacing: 10,
+        mainAxisSpacing: 10,
+      ),
+      itemCount: widget.mediaImages.length,
+      itemBuilder: (context, index) {
+        return Image.asset(
+          widget.mediaImages[index],
+          fit: BoxFit.cover,
+        );
+      },
     );
   }
 }

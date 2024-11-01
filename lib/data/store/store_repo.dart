@@ -1,4 +1,5 @@
 import '../../core/constants/images.dart';
+import '../../core/constants/strings.dart';
 
 class Game {
   final String imagePath;
@@ -8,6 +9,7 @@ class Game {
   final String? discount;
   final String description; // Menambahkan deskripsi game
   final List<String> systemRequirements; // Menambahkan persyaratan sistem
+  final List<String> mediaImages;
 
   Game({
     required this.imagePath,
@@ -17,6 +19,7 @@ class Game {
     this.discount,
     required this.description,
     required this.systemRequirements,
+    required this.mediaImages,
   });
 }
 
@@ -27,11 +30,13 @@ List<Game> featuredGames = [
     title: 'The Forest',
     genre: 'Survival, Open World',
     price: '\$ 15',
-    description: '',
+    description:
+        'As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.theforest_min,
+      StoreGame.theforest_rec,
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.breakpoint,
@@ -43,6 +48,7 @@ List<Game> featuredGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.wildlands,
@@ -54,6 +60,7 @@ List<Game> featuredGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -69,6 +76,7 @@ List<Game> specialOffers = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.got,
@@ -81,6 +89,7 @@ List<Game> specialOffers = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.darksoul3,
@@ -93,6 +102,7 @@ List<Game> specialOffers = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -108,6 +118,7 @@ List<Game> recommendedForYou = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.cyberpunk,
@@ -120,6 +131,7 @@ List<Game> recommendedForYou = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.bo6,
@@ -132,6 +144,7 @@ List<Game> recommendedForYou = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -148,6 +161,7 @@ List<Game> newAndTrendingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.gta5,
@@ -160,6 +174,7 @@ List<Game> newAndTrendingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.payday3,
@@ -171,6 +186,7 @@ List<Game> newAndTrendingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -185,6 +201,7 @@ List<Game> topSellersGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.assetto,
@@ -196,6 +213,7 @@ List<Game> topSellersGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.motogp,
@@ -207,6 +225,7 @@ List<Game> topSellersGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -221,6 +240,7 @@ List<Game> upcomingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.l4d2,
@@ -232,6 +252,7 @@ List<Game> upcomingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.daysgone,
@@ -243,6 +264,7 @@ List<Game> upcomingGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
 
@@ -258,6 +280,7 @@ List<Game> specialsGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.helldivers,
@@ -269,6 +292,7 @@ List<Game> specialsGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
   Game(
     imagePath: Images.godofwar,
@@ -281,5 +305,6 @@ List<Game> specialsGames = [
       'Minimum: ',
       'Recommended: ',
     ],
+    mediaImages: [],
   ),
 ];
