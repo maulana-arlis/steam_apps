@@ -36,7 +36,13 @@ List<Game> featuredGames = [
       StoreGame.theforest_min,
       StoreGame.theforest_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.theforest1,
+      MediaGame.theforest2,
+      MediaGame.theforest3,
+      MediaGame.theforest4,
+      MediaGame.theforest5,
+    ],
   ),
   Game(
     imagePath: Images.breakpoint,

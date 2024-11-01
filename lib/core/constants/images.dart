@@ -42,6 +42,11 @@ class Images {
 }
 
 class MediaGame {
+  static const String theforest1 = 'assets/media/theforest/theforest1.jpg';
+  static const String theforest2 = 'assets/media/theforest/theforest2.jpg';
+  static const String theforest3 = 'assets/media/theforest/theforest3.jpg';
+  static const String theforest4 = 'assets/media/theforest/theforest4.jpg';
+  static const String theforest5 = 'assets/media/theforest/theforest5.jpg';
   static const String forza1 = 'assets/media/forza/forza1.jpg';
   static const String forza2 = 'assets/media/forza/forza2.jpg';
   static const String forza3 = 'assets/media/forza/forza3.jpg';
