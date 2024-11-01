@@ -6,6 +6,8 @@ class Game {
   final String genre;
   final String price;
   final String? discount;
+  final String description; // Menambahkan deskripsi game
+  final List<String> systemRequirements; // Menambahkan persyaratan sistem
 
   Game({
     required this.imagePath,
@@ -13,6 +15,8 @@ class Game {
     required this.genre,
     required this.price,
     this.discount,
+    required this.description,
+    required this.systemRequirements,
   });
 }
 
@@ -23,18 +27,33 @@ List<Game> featuredGames = [
     title: 'The Forest',
     genre: 'Survival, Open World',
     price: '\$ 15',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.breakpoint,
     title: 'Ghost Recon Breakpoint',
     genre: 'Shooter, Tactical',
     price: 'IN LIBRARY',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.wildlands,
     title: 'Ghost Recon Wildlands',
     genre: 'Shooter, Tactical',
     price: 'IN LIBRARY',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -45,6 +64,11 @@ List<Game> specialOffers = [
     genre: 'Magic, Fantasy',
     price: '\$ 45',
     discount: '20',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.got,
@@ -52,6 +76,11 @@ List<Game> specialOffers = [
     genre: 'Action, Adventure',
     price: '\$ 65',
     discount: '35',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.darksoul3,
@@ -59,6 +88,11 @@ List<Game> specialOffers = [
     genre: 'Souls-Like, Dark Fantasy',
     price: '\$ 75',
     discount: '10',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -69,6 +103,11 @@ List<Game> recommendedForYou = [
     genre: 'Mythology, RPG',
     price: '\$ 50',
     discount: null,
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.cyberpunk,
@@ -76,6 +115,11 @@ List<Game> recommendedForYou = [
     genre: 'Cyberpunk, Sci-Fi',
     price: '\$ 60',
     discount: null,
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.bo6,
@@ -83,6 +127,11 @@ List<Game> recommendedForYou = [
     genre: 'Shooter, FPS',
     price: '\$ 70',
     discount: null,
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -94,6 +143,11 @@ List<Game> newAndTrendingGames = [
     genre: 'RPG, Action',
     price: '\$ 45',
     discount: '10%',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.gta5,
@@ -101,12 +155,22 @@ List<Game> newAndTrendingGames = [
     genre: 'Action, Open World',
     price: '\$ 30',
     discount: '20%',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.payday3,
     title: 'Pay Day 3',
     genre: 'Heist, Crime',
     price: '\$ 20',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -116,18 +180,33 @@ List<Game> topSellersGames = [
     title: 'F1 2024',
     genre: 'Race, Driving',
     price: '\$ 50',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.assetto,
     title: 'Asseto Corsa',
     genre: 'Driving, Simulation',
     price: '\$ 25',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.motogp,
     title: 'MotoGP 2024',
     genre: 'Motorbike, Race',
     price: '\$ 30',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -137,18 +216,33 @@ List<Game> upcomingGames = [
     title: 'Dead Island 2',
     genre: 'Zombie, Open World',
     price: 'Pre-Order',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.l4d2,
     title: 'Left 4 Dead 2',
     genre: 'Zombie, Survival',
     price: 'Pre-Order',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.daysgone,
     title: 'Days Gone',
     genre: 'Survival, Horror',
     price: 'Pre-Order',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];
 
@@ -159,12 +253,22 @@ List<Game> specialsGames = [
     genre: 'Race, Driving',
     price: '',
     discount: ' IN LIBRARY',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.helldivers,
     title: 'HellDivers 2',
     genre: 'Action, Shooter',
     price: '\$ 60',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
   Game(
     imagePath: Images.godofwar,
@@ -172,5 +276,10 @@ List<Game> specialsGames = [
     genre: 'Action, Adventure',
     price: '\$ 50',
     discount: '10%',
+    description: '',
+    systemRequirements: [
+      'Minimum: ',
+      'Recommended: ',
+    ],
   ),
 ];

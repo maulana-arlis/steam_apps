@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import '../../core/constants/colors.dart';
 import '../widgets/game_card.dart';
 import '../../data/store/store_repo.dart'; // Mengimpor store_repo.dart
+import '../main/game_detail_store.dart'; // Mengimpor halaman detail game
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _HomeScreenState createState() => _HomeScreenState();
 }
 
@@ -69,12 +69,28 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: featuredGames.length,
                   itemBuilder: (context, index) {
                     final game = featuredGames[index];
-                    return SizedBox(
-                      width: 400,
-                      child: GameCard(
-                        imagePath: game.imagePath,
-                        price: game.price,
-                        discount: game.discount,
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GameDetailStore(
+                              game: game,
+                              title: game.title,
+                              description: game.description,
+                              imagePath: game.imagePath,
+                              systemRequirements: game.systemRequirements,
+                            ),
+                          ),
+                        );
+                      },
+                      child: SizedBox(
+                        width: 400,
+                        child: GameCard(
+                          imagePath: game.imagePath,
+                          price: game.price,
+                          discount: game.discount,
+                        ),
                       ),
                     );
                   },
@@ -99,10 +115,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: specialOffers.length,
                   itemBuilder: (context, index) {
                     final game = specialOffers[index];
-                    return GameCard(
-                      imagePath: game.imagePath,
-                      price: game.price,
-                      discount: game.discount,
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GameDetailStore(
+                                game: game,
+                                title: game.title,
+                                description: game.description,
+                                imagePath: game.imagePath,
+                                systemRequirements: game.systemRequirements),
+                          ),
+                        );
+                      },
+                      child: GameCard(
+                        imagePath: game.imagePath,
+                        price: game.price,
+                        discount: game.discount,
+                      ),
                     );
                   },
                 ),
@@ -125,123 +156,94 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: recommendedForYou.length,
                   itemBuilder: (context, index) {
                     final game = recommendedForYou[index];
-                    return GameCard(
-                      imagePath: game.imagePath,
-                      price: game.price,
-                      discount: game.discount,
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GameDetailStore(
+                                game: game,
+                                title: game.title,
+                                description: game.description,
+                                imagePath: game.imagePath,
+                                systemRequirements: game.systemRequirements),
+                          ),
+                        );
+                      },
+                      child: GameCard(
+                        imagePath: game.imagePath,
+                        price: game.price,
+                        discount: game.discount,
+                      ),
                     );
                   },
                 ),
               ),
-              const SizedBox(
-                  height:
-                      20), // Jarak antara "RECOMMENDED FOR YOU" dan tombol navigasi
+              const SizedBox(height: 20),
 
               // Bottom Navigation Buttons (Scrolling)
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedTab = 0; // Mengubah tab yang dipilih
-                      });
-                      updateDisplayedGames(0);
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 12.0, vertical: 8.0),
-                      decoration: BoxDecoration(
-                        color:
-                            selectedTab == 0 ? Colors.blue : AppColors.bgColors,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: const Text(
-                        'New & Trending',
-                        style: TextStyle(color: Colors.white, fontSize: 12),
-                      ),
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedTab = 1; // Mengubah tab yang dipilih
-                      });
-                      updateDisplayedGames(1);
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 12.0, vertical: 8.0),
-                      decoration: BoxDecoration(
-                        color:
-                            selectedTab == 1 ? Colors.blue : AppColors.bgColors,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: const Text(
-                        'Top Sellers',
-                        style: TextStyle(color: Colors.white, fontSize: 12),
+                  for (int i = 0; i < 4; i++)
+                    GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          selectedTab = i; // Mengubah tab yang dipilih
+                        });
+                        updateDisplayedGames(i);
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 12.0, vertical: 8.0),
+                        decoration: BoxDecoration(
+                          color: selectedTab == i
+                              ? Colors.blue
+                              : AppColors.bgColors,
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        child: Text(
+                          [
+                            'New & Trending',
+                            'Top Sellers',
+                            'Upcoming',
+                            'Specials'
+                          ][i],
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 12),
+                        ),
                       ),
                     ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedTab = 2; // Mengubah tab yang dipilih
-                      });
-                      updateDisplayedGames(2);
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 12.0, vertical: 8.0),
-                      decoration: BoxDecoration(
-                        color:
-                            selectedTab == 2 ? Colors.blue : AppColors.bgColors,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: const Text(
-                        'Upcoming',
-                        style: TextStyle(color: Colors.white, fontSize: 12),
-                      ),
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        selectedTab = 3; // Mengubah tab yang dipilih
-                      });
-                      updateDisplayedGames(3);
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 12.0, vertical: 8.0),
-                      decoration: BoxDecoration(
-                        color:
-                            selectedTab == 3 ? Colors.blue : AppColors.bgColors,
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                      child: const Text(
-                        'Specials',
-                        style: TextStyle(color: Colors.white, fontSize: 12),
-                      ),
-                    ),
-                  ),
                 ],
               ),
-              const SizedBox(
-                  height:
-                      15), // Memberikan jarak antara tombol navigasi dan daftar game
+              const SizedBox(height: 15),
 
               // Game List Section
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  for (var game in displayedGames) // Menggunakan displayedGames
-                    GameListTile(
-                      imagePath: game.imagePath,
-                      title: game.title,
-                      genre: game.genre,
-                      price: game.price,
-                      discount: game.discount,
+                  for (var game in displayedGames)
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => GameDetailStore(
+                                game: game,
+                                title: game.title,
+                                description: game.description,
+                                imagePath: game.imagePath,
+                                systemRequirements: game.systemRequirements),
+                          ),
+                        );
+                      },
+                      child: GameListTile(
+                        imagePath: game.imagePath,
+                        title: game.title, // Menambahkan title
+                        genre: game.genre,
+                        price: game.price,
+                        discount: game.discount,
+                      ),
                     ),
                 ],
               ),
