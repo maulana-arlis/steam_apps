@@ -174,12 +174,19 @@ List<Game> recommendedForYou = [
     genre: 'Cyberpunk, Sci-Fi',
     price: '\$ 60',
     discount: null,
-    description: '',
+    description:
+        'Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.cyberpunk_min,
+      StoreGame.cyberpunk_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.cyberpunk1,
+      MediaGame.cyberpunk2,
+      MediaGame.cyberpunk3,
+      MediaGame.cyberpunk4,
+      MediaGame.cyberpunk5,
+    ],
   ),
   Game(
     imagePath: Images.bo6,
@@ -187,12 +194,19 @@ List<Game> recommendedForYou = [
     genre: 'Shooter, FPS',
     price: '\$ 70',
     discount: null,
-    description: '',
+    description:
+        'Call of Duty®: Black Ops 6 is signature Black Ops across a cinematic single-player Campaign, a best-in-class Multiplayer experience and with the epic return of Round-Based Zombies. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.bo6_min,
+      StoreGame.bo6_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.bo6_1,
+      MediaGame.bo6_2,
+      MediaGame.bo6_3,
+      MediaGame.bo6_4,
+      MediaGame.bo6_5,
+    ],
   ),
 ];
 
@@ -204,12 +218,19 @@ List<Game> newAndTrendingGames = [
     genre: 'RPG, Action',
     price: '\$ 45',
     discount: '10%',
-    description: '',
+    description:
+        'You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.witcher3_min,
+      StoreGame.witcher3_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.witcher3_1,
+      MediaGame.witcher3_2,
+      MediaGame.witcher3_3,
+      MediaGame.witcher3_4,
+      MediaGame.witcher3_5,
+    ],
   ),
   Game(
     imagePath: Images.gta5,
@@ -217,24 +238,38 @@ List<Game> newAndTrendingGames = [
     genre: 'Action, Open World',
     price: '\$ 30',
     discount: '20%',
-    description: '',
+    description:
+        'Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.gta5_min,
+      StoreGame.gta5_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.gta5_1,
+      MediaGame.gta5_2,
+      MediaGame.gta5_3,
+      MediaGame.gta5_4,
+      MediaGame.gta5_5,
+    ],
   ),
   Game(
     imagePath: Images.payday3,
-    title: 'Pay Day 3',
+    title: 'PayDay 3',
     genre: 'Heist, Crime',
     price: '\$ 20',
-    description: '',
+    description:
+        'PAYDAY 3 is the much anticipated sequel to one of the most popular co-op shooters ever. Since its release, PAYDAY-players have been reveling in the thrill of a perfectly planned and executed heist. That’s what makes PAYDAY a high-octane, co-op FPS experience without equal',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.payday3_min,
+      StoreGame.payday3_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.payday3_1,
+      MediaGame.payday3_2,
+      MediaGame.payday3_3,
+      MediaGame.payday3_4,
+      MediaGame.payday3_5,
+    ],
   ),
 ];
 

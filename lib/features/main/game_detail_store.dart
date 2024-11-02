@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:flutter/material.dart';
 import '../../data/store/store_repo.dart';
 import '../../core/constants/colors.dart';
@@ -203,7 +205,7 @@ class _GameDetailStoreState extends State<GameDetailStore> {
                         ),
                       ),
               ] else if (selectedTab == 2) ...[
-                GameDetailAnalysisTab(),
+                const GameDetailAnalysisTab(),
               ],
             ],
           ),

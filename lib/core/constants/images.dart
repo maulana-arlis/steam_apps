@@ -42,6 +42,31 @@ class Images {
 }
 
 class MediaGame {
+  static const String payday3_1 = 'assets/media/payday3/payday1.jpg';
+  static const String payday3_2 = 'assets/media/payday3/payday2.jpg';
+  static const String payday3_3 = 'assets/media/payday3/payday3.jpg';
+  static const String payday3_4 = 'assets/media/payday3/payday4.jpg';
+  static const String payday3_5 = 'assets/media/payday3/payday5.jpg';
+  static const String gta5_1 = 'assets/media/gta5/gta5_1.jpg';
+  static const String gta5_2 = 'assets/media/gta5/gta5_2.jpg';
+  static const String gta5_3 = 'assets/media/gta5/gta5_3.jpg';
+  static const String gta5_4 = 'assets/media/gta5/gta5_4.jpg';
+  static const String gta5_5 = 'assets/media/gta5/gta5_5.jpg';
+  static const String witcher3_1 = 'assets/media/witcher3/witcher3_1.jpg';
+  static const String witcher3_2 = 'assets/media/witcher3/witcher3_2.jpg';
+  static const String witcher3_3 = 'assets/media/witcher3/witcher3_3.jpg';
+  static const String witcher3_4 = 'assets/media/witcher3/witcher3_4.jpg';
+  static const String witcher3_5 = 'assets/media/witcher3/witcher3_5.jpg';
+  static const String bo6_1 = 'assets/media/bo6/bo6_1.jpg';
+  static const String bo6_2 = 'assets/media/bo6/bo6_2.jpg';
+  static const String bo6_3 = 'assets/media/bo6/bo6_3.jpg';
+  static const String bo6_4 = 'assets/media/bo6/bo6_4.jpg';
+  static const String bo6_5 = 'assets/media/bo6/bo6_5.jpg';
+  static const String cyberpunk1 = 'assets/media/cyberpunk/cyberpunk1.jpg';
+  static const String cyberpunk2 = 'assets/media/cyberpunk/cyberpunk2.jpg';
+  static const String cyberpunk3 = 'assets/media/cyberpunk/cyberpunk3.jpg';
+  static const String cyberpunk4 = 'assets/media/cyberpunk/cyberpunk4.jpg';
+  static const String cyberpunk5 = 'assets/media/cyberpunk/cyberpunk5.jpg';
   static const String wukong1 = 'assets/media/wukong/wukong1.jpg';
   static const String wukong2 = 'assets/media/wukong/wukong2.jpg';
   static const String wukong3 = 'assets/media/wukong/wukong3.jpg';

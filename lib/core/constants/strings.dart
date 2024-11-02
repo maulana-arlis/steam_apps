@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class DetailGame {
   static const String fh4 = '''
 Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. Collect, modify and drive over 450 cars. Race, stunt, create and explore – choose your own path to become a Horizon Superstar.\n
@@ -459,5 +461,99 @@ DirectX: Version 12
 Storage: 130 GB available space
 Sound Card: Windows Compatible Audio Device
 Additional Notes: SSD Required. The above specifications were tested with DLSS/FSR/XeSS enabled.
+''';
+  static const String cyberpunk_min = '''
+Requires a 64-bit processor and operating system
+OS: 64-bit Windows 10
+Processor: Core i7-6700 or Ryzen 5 1600
+Memory: 12 GB RAM
+Graphics: GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380
+DirectX: Version 12
+Storage: 70 GB available space
+Additional Notes: SSD required. Attention: In this game you will encounter a variety of visual effects that may provide seizures or loss of consciousness in a minority of people. If you or someone you know experiences any of the above symptoms while playing, stop and seek medical attention immediately.
+''';
+  static const String cyberpunk_rec = '''
+Requires a 64-bit processor and operating system
+OS: 64-bit Windows 10
+Processor: Core i7-12700 or Ryzen 7 7800X3D
+Memory: 16 GB RAM
+Graphics: GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770
+DirectX: Version 12
+Storage: 70 GB available space
+Additional Notes: SSD required.
+''';
+  static const String bo6_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows® 10 64 Bit (latest update)
+Processor: AMD Ryzen™ 5 1400 or Intel® Core™ i5-6600
+Memory: 8 GB RAM
+Graphics: AMD Radeon™ RX 470, NVIDIA® GeForce® GTX 960 or Intel® Arc™ A580
+DirectX: Version 12
+Network: Broadband Internet connection
+Additional Notes: SSD with 128 GB available space at launch
+''';
+  static const String bo6_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows® 10 64 Bit (latest update) or Windows® 11 64 Bit (latest update)
+Processor: AMD Ryzen™ 5 1600X or Intel® Core™ i7-6700K
+Memory: 12 GB RAM
+Graphics: AMD Radeon RX 6600XT or NVIDIA GeForce GTX 1080Ti / RTX 3060
+DirectX: Version 12
+Network: Broadband Internet connection
+Additional Notes: SSD with 128 GB available space at launch
+''';
+  static const String witcher3_min = '''
+OS: 64-bit Windows 7, 64-bit Windows 8 (8.1)
+Processor: Intel CPU Core i5-2500K 3.3GHz / AMD A10-5800K APU (3.8GHz)
+Memory: 6 GB RAM
+Graphics: Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870
+DirectX: Version 11
+Storage: 50 GB available space
+''';
+  static const String witcher3_rec = '''
+OS: 64-bit Windows 10/11
+Processor: Intel Core i5-7400 / Ryzen 5 1600
+Memory: 8 GB RAM
+Graphics: Nvidia GTX 1070 / Radeon RX 480
+DirectX: Version 12
+Storage: 50 GB available space
+''';
+  static const String gta5_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64 Bit
+Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz
+Memory: 4 GB RAM
+Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)
+Storage: 120 GB available space
+Sound Card: 100% DirectX 10 compatible
+''';
+  static const String gta5_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64 Bit
+Processor: Intel Core i5 3470 @ 3.2GHz (4 CPUs) / AMD X8 FX-8350 @ 4GHz (8 CPUs)
+Memory: 8 GB RAM
+Graphics: NVIDIA GTX 660 2GB / AMD HD 7870 2GB
+Storage: 120 GB available space
+Sound Card: 100% DirectX 10 compatible
+''';
+  static const String payday3_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i5-9400F
+Memory: 16 GB RAM
+Graphics: Nvidia GTX 1650 (4 GB) or AMD Radeon RX 580 (4GB)
+Network: Broadband Internet connection
+Storage: 65 GB available space
+Additional Notes: DirectX11, DirectX12 supported
+''';
+  static const String payday3_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i7-9700K
+Memory: 16 GB RAM
+Graphics: Nvidia GTX 1080 (8GB) or AMD RX VEGA 56
+Network: Broadband Internet connection
+Storage: 65 GB available space
+Additional Notes: DirectX11, DirectX12 supported
 ''';
 }
