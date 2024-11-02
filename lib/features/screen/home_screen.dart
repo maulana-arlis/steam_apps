@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               description: game.description,
                               imagePath: game.imagePath,
                               systemRequirements: game.systemRequirements,
-                              mediaImages: [],
+                              mediaImages: const [],
                             ),
                           ),
                         );
@@ -127,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               description: game.description,
                               imagePath: game.imagePath,
                               systemRequirements: game.systemRequirements,
-                              mediaImages: [],
+                              mediaImages: const [],
                             ),
                           ),
                         );
@@ -170,7 +170,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               description: game.description,
                               imagePath: game.imagePath,
                               systemRequirements: game.systemRequirements,
-                              mediaImages: [],
+                              mediaImages: const [],
                             ),
                           ),
                         );
@@ -239,7 +239,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               description: game.description,
                               imagePath: game.imagePath,
                               systemRequirements: game.systemRequirements,
-                              mediaImages: [],
+                              mediaImages: const [],
                             ),
                           ),
                         );

@@ -339,4 +339,125 @@ DirectX: Version 9.0
 Storage: 5 GB available space
 Sound Card: DirectX®-compatible
 ''';
+  static const String breakpoint_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 (64-bit versions only)
+Processor: AMD Ryzen 3 1200 @3.1 GHz, Intel Core i5 4460 @ 3.2 GHz, or better
+Memory: 8 GB RAM
+Graphics: AMD Radeon R9 280X or NVIDIA GeForce GTX 960 (4 GB VRAM with Shader Model 5.0 or better)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 67 GB available space
+Additional Notes: originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+''';
+  static const String breakpoint_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 (64-bit versions only)
+Processor: AMD Ryzen 5 1600 @3.2 GHz, Intel Core i7 6700K @4.0 GHz, or better
+Memory: 8 GB RAM
+Graphics: AMD Radeon RX 480 or NVIDIA GeForce GTX 1060 (6 GB VRAM with Shader Model 5.0 or better)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 67 GB available space
+Additional Notes: originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+''';
+  static const String wildlands_min = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Intel Core i5-2400S @ 2.5 GHz or AMD FX-4320 @ 4 GHz or equivalent
+Memory: 6 GB RAM
+Graphics: NVIDIA GeForce GTX660 / AMD R9 270X (2GB VRAM with Shader Model 5.0 or better)
+Storage: 50 GB available space
+Sound Card: DirectX-compatible using the latest drivers
+Additional Notes: Game contains EasyAntiCheat anti-cheat technology and Denuvo anti-tamper technology.''';
+  static const String wildlands_rec = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Intel Core i7- 3770@ 3.5 GHz or AMD FX-8350 @ 4 GHz or better
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX970/GTX 1060 or AMD R9 390/RX480 (4GB VRAM with Shader Model 5.0 or better)
+Storage: 50 GB available space
+Sound Card: DirectX-compatible using the latest drivers
+Additional Notes: Game contains EasyAntiCheat anti-cheat technology and Denuvo anti-tamper technology.
+''';
+  static const String hogwarts_min = '''
+Requires a 64-bit processor and operating system
+OS: 64-bit Windows 10
+Processor: Intel Core i5-6600 (3.3Ghz) or AMD Ryzen 5 1400 (3.2Ghz)
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce GTX 960 4GB or AMD Radeon RX 470 4GB
+DirectX: Version 12
+Storage: 85 GB available space
+Additional Notes: SSD (Preferred), HDD (Supported), 720p/30 fps, Low Quality Settings
+''';
+  static const String hogwarts_rec = '''
+Requires a 64-bit processor and operating system
+OS: 64-bit Windows 10
+Processor: Intel Core i7-8700 (3.2Ghz) or AMD Ryzen 5 3600 (3.6 Ghz)
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce 1080 Ti or AMD Radeon RX 5700 XT or INTEL Arc A770
+DirectX: Version 12
+Storage: 85 GB available space
+Additional Notes: SSD, 1080p/60 fps, High Quality Settings
+''';
+  static const String got_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel Core i3-7100 or AMD Ryzen 3 1200
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 960 or AMD Radeon RX 5500 XT
+Storage: 75 GB available space
+Additional Notes: SSD Recommended
+''';
+  static const String got_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel Core i5-8600 or AMD Ryzen 5 3600
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce RTX 2060 or AMD Radeon RX 5600 XT
+Storage: 75 GB available space
+Additional Notes: SSD Required
+''';
+  static const String ds_min = '''
+OS: Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit
+Processor: Intel Core i3-2100 / AMD® FX-6300
+Memory: 4 GB RAM
+Graphics: NVIDIA® GeForce GTX 750 Ti / ATI Radeon HD 7950
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 25 GB available space
+Sound Card: DirectX 11 sound device
+Additional Notes: Internet connection required for online play and product activation
+''';
+  static const String ds_rec = '''
+OS: Windows 7 SP1 64bit, Windows 8.1 64bit Windows 10 64bit
+Processor: Intel Core i7-3770 / AMD® FX-8350
+Memory: 8 GB RAM
+Graphics: NVIDIA® GeForce GTX 970 / ATI Radeon R9 series
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 25 GB available space
+Sound Card: DirectX 11 sound device
+Additional Notes: Internet connection required for online play and product activation
+''';
+  static const String wukong_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel Core i5-8400 / AMD Ryzen 5 1600
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB
+DirectX: Version 11
+Storage: 130 GB available space
+Sound Card: Windows Compatible Audio Device
+Additional Notes: HDD Supported, SSD Recommended. The above specifications were tested with DLSS/FSR/XeSS enabled.
+''';
+  static const String wukong_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel Core i7-9700 / AMD Ryzen 5 5500
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750
+DirectX: Version 12
+Storage: 130 GB available space
+Sound Card: Windows Compatible Audio Device
+Additional Notes: SSD Required. The above specifications were tested with DLSS/FSR/XeSS enabled.
+''';
 }

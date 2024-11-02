@@ -49,24 +49,38 @@ List<Game> featuredGames = [
     title: 'Ghost Recon Breakpoint',
     genre: 'Shooter, Tactical',
     price: 'IN LIBRARY',
-    description: '',
+    description:
+        'Become a Ghost, fighting against a rogue spec ops faction called the Wolves, in the latest Tom Clancys Ghost Recon®!',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.breakpoint_min,
+      StoreGame.breakpoint_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.breakpoint1,
+      MediaGame.breakpoint2,
+      MediaGame.breakpoint3,
+      MediaGame.breakpoint4,
+      MediaGame.breakpoint5,
+    ],
   ),
   Game(
     imagePath: Images.wildlands,
     title: 'Ghost Recon Wildlands',
     genre: 'Shooter, Tactical',
     price: 'IN LIBRARY',
-    description: '',
+    description:
+        'Create a team with up to 3 friends in Tom Clancy’s Ghost Recon® Wildlands and enjoy the ultimate military shooter experience set in a massive, dangerous, and responsive open world.',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.wildlands_min,
+      StoreGame.wildlands_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.wildlands1,
+      MediaGame.wildlands2,
+      MediaGame.wildlands3,
+      MediaGame.wildlands4,
+      MediaGame.wildlands5,
+    ],
   ),
 ];
 
@@ -77,12 +91,19 @@ List<Game> specialOffers = [
     genre: 'Magic, Fantasy',
     price: '\$ 45',
     discount: '20',
-    description: '',
+    description:
+        'Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.hogwarts_min,
+      StoreGame.hogwarts_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.hogwarts1,
+      MediaGame.hogwarts2,
+      MediaGame.hogwarts3,
+      MediaGame.hogwarts4,
+      MediaGame.hogwarts5,
+    ],
   ),
   Game(
     imagePath: Images.got,
@@ -90,25 +111,39 @@ List<Game> specialOffers = [
     genre: 'Action, Adventure',
     price: '\$ 65',
     discount: '35',
-    description: '',
+    description:
+        'A storm is coming. Venture into the complete Ghost of Tsushima DIRECTOR’S CUT on PC; forge your own path through this open-world action adventure and uncover its hidden wonders. Brought to you by Sucker Punch Productions, Nixxes Software and PlayStation Studios. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.got_min,
+      StoreGame.got_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.got1,
+      MediaGame.got2,
+      MediaGame.got3,
+      MediaGame.got4,
+      MediaGame.got5,
+    ],
   ),
   Game(
     imagePath: Images.darksoul3,
     title: 'Dark Souls 3',
     genre: 'Souls-Like, Dark Fantasy',
-    price: '\$ 75',
-    discount: '10',
-    description: '',
+    price: '\$ 35',
+    discount: '20',
+    description:
+        'Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness! ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.ds_min,
+      StoreGame.ds_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.ds1,
+      MediaGame.ds2,
+      MediaGame.ds3,
+      MediaGame.ds4,
+      MediaGame.ds5,
+    ],
   ),
 ];
 
@@ -119,12 +154,19 @@ List<Game> recommendedForYou = [
     genre: 'Mythology, RPG',
     price: '\$ 50',
     discount: null,
-    description: '',
+    description:
+        'Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.wukong_min,
+      StoreGame.wukong_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.wukong1,
+      MediaGame.wukong2,
+      MediaGame.wukong3,
+      MediaGame.wukong4,
+      MediaGame.wukong5,
+    ],
   ),
   Game(
     imagePath: Images.cyberpunk,

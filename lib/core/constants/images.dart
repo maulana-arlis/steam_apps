@@ -42,6 +42,26 @@ class Images {
 }
 
 class MediaGame {
+  static const String wukong1 = 'assets/media/wukong/wukong1.jpg';
+  static const String wukong2 = 'assets/media/wukong/wukong2.jpg';
+  static const String wukong3 = 'assets/media/wukong/wukong3.jpg';
+  static const String wukong4 = 'assets/media/wukong/wukong4.jpg';
+  static const String wukong5 = 'assets/media/wukong/wukong5.jpg';
+  static const String ds1 = 'assets/media/darksouls3/ds1.jpg';
+  static const String ds2 = 'assets/media/darksouls3/ds2.jpg';
+  static const String ds3 = 'assets/media/darksouls3/ds3.jpg';
+  static const String ds4 = 'assets/media/darksouls3/ds4.jpg';
+  static const String ds5 = 'assets/media/darksouls3/ds5.jpg';
+  static const String got1 = 'assets/media/got/got1.jpg';
+  static const String got2 = 'assets/media/got/got2.jpg';
+  static const String got3 = 'assets/media/got/got3.jpg';
+  static const String got4 = 'assets/media/got/got4.jpg';
+  static const String got5 = 'assets/media/got/got5.jpg';
+  static const String hogwarts1 = 'assets/media/hogwarts/hogwarts1.jpg';
+  static const String hogwarts2 = 'assets/media/hogwarts/hogwarts2.jpg';
+  static const String hogwarts3 = 'assets/media/hogwarts/hogwarts3.jpg';
+  static const String hogwarts4 = 'assets/media/hogwarts/hogwarts4.jpg';
+  static const String hogwarts5 = 'assets/media/hogwarts/hogwarts5.jpg';
   static const String theforest1 = 'assets/media/theforest/theforest1.jpg';
   static const String theforest2 = 'assets/media/theforest/theforest2.jpg';
   static const String theforest3 = 'assets/media/theforest/theforest3.jpg';
