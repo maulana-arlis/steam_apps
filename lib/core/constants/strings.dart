@@ -619,4 +619,117 @@ Memory: 8 GB RAM
 Graphics: GeForce RTX 2070 (8192 MB) | Radeon RX 5700 (8192 MB)
 Storage: 24 GB available space
 ''';
+  static const String deadisland2_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: AMD FX-9590 / Intel Core i7-7700HQ
+Memory: 10 GB RAM
+Graphics: Radeon R9 390X (8192 VRAM) / GeForce GTX 1060 (6144 VRAM)
+DirectX: Version 12
+Storage: 70 GB GB available space
+''';
+  static const String deadisland2_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Ryzen 5 5600X / Intel Core i9-9900k
+Memory: 10 GB RAM
+Graphics: Radeon RX 6800 XT (16384 VRAM) / GeForce RTX 2070 Super (8192 MB)
+DirectX: Version 12
+Storage: 70 GB GB available space
+''';
+  static const String l4d2_min = '''
+OS: Windows® 7 32/64-bit / Vista 32/64 / XP
+Processor: Pentium 4 3.0GHz
+Memory: 2 GB RAM
+Graphics: Video card with 128 MB, Shader model 2.0. ATI X800, NVidia 6600 or better
+DirectX: Version 9.0c
+Storage: 13 GB available space
+Sound Card: DirectX 9.0c compatible sound card
+''';
+  static const String l4d2_rec = '''
+OS: Windows® 7 32/64-bit / Vista 32/64 / XP
+Processor: Intel core 2 duo 2.4GHz
+Memory: 2 GB RAM
+Graphics: Video Card Shader model 3.0. NVidia 7600, ATI X1600 or better
+DirectX: Version 9.0c
+Storage: 13 GB available space
+Sound Card: DirectX 9.0c compatible sound card
+''';
+  static const String daysgone_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bits
+Processor: Intel Core i5-2500K@3.3GHz or AMD FX 6300@3.5GHz
+Memory: 8 GB RAM
+Graphics: Nvidia GeForce GTX 780 (3 GB) or AMD Radeon R9 290 (4 GB)
+DirectX: Version 11
+Storage: 70 GB available space
+Additional Notes: Though not required, SSD for storage and 16 GB of memory is recommended
+''';
+  static const String daysgone_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bits
+Processor: Intel Core i7-4770K@3.5GHz or Ryzen 5 1500X@3.5GHz
+Memory: 16 GB RAM
+Graphics: Nvidia GeForce GTX 1060 (6 GB) or AMD Radeon RX 580 (8 GB)
+DirectX: Version 11
+Storage: 70 GB available space
+Additional Notes: Though not required, SSD for storage is recommended
+''';
+  static const String forza4_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 version 15063.0 or higher
+Processor: Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz
+Memory: 8 GB RAM
+Graphics: NVidia 650TI OR AMD R7 250x
+DirectX: Version 12
+Network: Broadband Internet connection
+Storage: 80 GB available space
+''';
+  static const String forza4_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 version 15063.0 or higher
+Processor: Intel i7-3820 @ 3.6Ghz
+Memory: 12 GB RAM
+Graphics: NVidia GTX 970 OR NVidia GTX 1060 3GB OR AMD R9 290x OR AMD RX 470
+DirectX: Version 12
+Network: Broadband Internet connection
+Storage: 100 GB available space
+''';
+  static const String helldivers_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i7-4790K or AMD Ryzen 5 1500X
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470
+Storage: 100 GB available space
+''';
+  static const String helldivers_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i7-9700K or AMD Ryzen 7 3700X
+Memory: 16 GB RAM
+Graphics: NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT
+Storage: 100 GB available space
+Additional Notes: SSD Recommended
+''';
+  static const String gow_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel i5-4670k or AMD Ryzen 3 1200
+Memory: 8 GB RAM
+Graphics: NVIDIA GTX 1060 (6GB) or AMD RX 5500 XT (8GB) or Intel Arc A750
+DirectX: Version 12
+Storage: 190 GB available space
+Additional Notes: Windows version 2004 2020-05-27 19041. 6GB GPU is required
+''';
+  static const String gow_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit
+Processor: Intel i5-8600 or AMD Ryzen 5 3600
+Memory: 16 GB RAM
+Graphics: NVIDIA RTX 2060 Super or AMD RX 5700 or Intel Arc A770
+DirectX: Version 12
+Storage: 190 GB available space
+Additional Notes: Windows version 2004 2020-05-27 19041. 6GB GPU is required
+''';
 }

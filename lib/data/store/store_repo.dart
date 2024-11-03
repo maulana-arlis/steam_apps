@@ -339,36 +339,57 @@ List<Game> upcomingGames = [
     title: 'Dead Island 2',
     genre: 'Zombie, Open World',
     price: 'Pre-Order',
-    description: '',
+    description:
+        'A deadly virus is spreading across Los Angeles, turning its inhabitants into zombies. Bitten, infected, but more than just immune, uncover the truth behind the outbreak and discover who - or what - you are. Survive, evolve and become the ultimate Zombie Slayer. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.deadisland2_min,
+      StoreGame.deadisland2_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.deadisland1,
+      MediaGame.deadisland2,
+      MediaGame.deadisland3,
+      MediaGame.deadisland4,
+      MediaGame.deadisland5,
+    ],
   ),
   Game(
     imagePath: Images.l4d2,
     title: 'Left 4 Dead 2',
     genre: 'Zombie, Survival',
     price: 'Pre-Order',
-    description: '',
+    description:
+        'Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to...',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.l4d2_min,
+      StoreGame.l4d2_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.l4d2_1,
+      MediaGame.l4d2_2,
+      MediaGame.l4d2_3,
+      MediaGame.l4d2_4,
+      MediaGame.l4d2_5,
+    ],
   ),
   Game(
     imagePath: Images.daysgone,
     title: 'Days Gone',
     genre: 'Survival, Horror',
     price: 'Pre-Order',
-    description: '',
+    description:
+        'Ride and fight into a deadly, post pandemic America. Play as Deacon St. John, a drifter and bounty hunter who rides the broken road, fighting to survive while searching for a reason to live in this open-world action-adventure game. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.daysgone_min,
+      StoreGame.daysgone_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.daysgone1,
+      MediaGame.daysgone2,
+      MediaGame.daysgone3,
+      MediaGame.daysgone4,
+      MediaGame.daysgone5,
+    ],
   ),
 ];
 
@@ -379,24 +400,38 @@ List<Game> specialsGames = [
     genre: 'Race, Driving',
     price: '',
     discount: ' IN LIBRARY',
-    description: '',
+    description:
+        'Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.forza4_min,
+      StoreGame.forza4_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.forza1,
+      MediaGame.forza2,
+      MediaGame.forza3,
+      MediaGame.forza4,
+      MediaGame.forza5,
+    ],
   ),
   Game(
     imagePath: Images.helldivers,
     title: 'HellDivers 2',
     genre: 'Action, Shooter',
     price: '\$ 60',
-    description: '',
+    description:
+        'The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.helldivers_min,
+      StoreGame.helldivers_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.helldivers1,
+      MediaGame.helldivers2,
+      MediaGame.helldivers3,
+      MediaGame.helldivers4,
+      MediaGame.helldivers5,
+    ],
   ),
   Game(
     imagePath: Images.godofwar,
@@ -404,11 +439,18 @@ List<Game> specialsGames = [
     genre: 'Action, Adventure',
     price: '\$ 50',
     discount: '10%',
-    description: '',
+    description:
+        'Kratos and Atreus embark on a mythic journey for answers before Ragnarök arrives – now on PC. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.gow_min,
+      StoreGame.gow_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.gow1,
+      MediaGame.gow2,
+      MediaGame.gow3,
+      MediaGame.gow4,
+      MediaGame.gow5,
+    ],
   ),
 ];

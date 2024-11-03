@@ -39,9 +39,31 @@ class Images {
   static const String daysgone = 'assets/images/gone_header.jpg';
   static const String helldivers = 'assets/images/hellldiver_header.jpg';
   static const String godofwar = 'assets/images/godofwar_header.jpg';
+
+  static var defaultImage;
 }
 
 class MediaGame {
+  static const String gow1 = 'assets/media/gow/gow1.jpg';
+  static const String gow2 = 'assets/media/gow/gow2.jpg';
+  static const String gow3 = 'assets/media/gow/gow3.jpg';
+  static const String gow4 = 'assets/media/gow/gow4.jpg';
+  static const String gow5 = 'assets/media/gow/gow5.jpg';
+  static const String helldivers1 = 'assets/media/helldivers/helldivers1.jpg';
+  static const String helldivers2 = 'assets/media/helldivers/helldivers2.jpg';
+  static const String helldivers3 = 'assets/media/helldivers/helldivers3.jpg';
+  static const String helldivers4 = 'assets/media/helldivers/helldivers4.jpg';
+  static const String helldivers5 = 'assets/media/helldivers/helldivers5.jpg';
+  static const String daysgone1 = 'assets/media/daysgone/daysgone1.jpg';
+  static const String daysgone2 = 'assets/media/daysgone/daysgone2.jpg';
+  static const String daysgone3 = 'assets/media/daysgone/daysgone3.jpg';
+  static const String daysgone4 = 'assets/media/daysgone/daysgone4.jpg';
+  static const String daysgone5 = 'assets/media/daysgone/daysgone5.jpg';
+  static const String l4d2_1 = 'assets/media/l4d2/l4d2_1.jpg';
+  static const String l4d2_2 = 'assets/media/l4d2/l4d2_2.jpg';
+  static const String l4d2_3 = 'assets/media/l4d2/l4d2_3.jpg';
+  static const String l4d2_4 = 'assets/media/l4d2/l4d2_4.jpg';
+  static const String l4d2_5 = 'assets/media/l4d2/l4d2_5.jpg';
   static const String motogp1 = 'assets/media/motogp/motogp1.jpg';
   static const String motogp2 = 'assets/media/motogp/motogp2.jpg';
   static const String motogp3 = 'assets/media/motogp/motogp3.jpg';
@@ -197,4 +219,14 @@ class MediaGame {
       'assets/media/dyinglight2/dyinglight2_4.jpg';
   static const String dyinglight2_5 =
       'assets/media/dyinglight2/dyinglight2_5.jpg';
+  static const String deadisland1 =
+      'assets/media/deadisland2/deadisland2_1.jpg';
+  static const String deadisland2 =
+      'assets/media/deadisland2/deadisland2_2.jpg';
+  static const String deadisland3 =
+      'assets/media/deadisland2/deadisland2_3.jpg';
+  static const String deadisland4 =
+      'assets/media/deadisland2/deadisland2_4.jpg';
+  static const String deadisland5 =
+      'assets/media/deadisland2/deadisland2_5.jpg';
 }

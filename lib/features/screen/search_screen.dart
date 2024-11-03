@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/colors.dart';
+import 'search_result.dart'; // Import the new screen
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _SearchScreenState createState() => _SearchScreenState();
 }
 
@@ -45,6 +45,16 @@ class _SearchScreenState extends State<SearchScreen> {
                   ),
                   prefixIcon: const Icon(Icons.search),
                 ),
+                onSubmitted: (value) {
+                  // Navigate to search_result.dart when search is submitted
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          SearchResultScreen(searchQuery: value),
+                    ),
+                  );
+                },
               ),
               const SizedBox(height: 50),
               Column(
