@@ -279,36 +279,57 @@ List<Game> topSellersGames = [
     title: 'F1 2024',
     genre: 'Race, Driving',
     price: '\$ 50',
-    description: '',
+    description:
+        'Join the grid and Be One of the 20. Drive like the greatest in EA SPORTS™ F1® 24, the official video game of the 2024 FIA Formula One World Championship™. ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.f1_min,
+      StoreGame.f1_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.f1_1,
+      MediaGame.f1_2,
+      MediaGame.f1_3,
+      MediaGame.f1_4,
+      MediaGame.f1_5,
+    ],
   ),
   Game(
     imagePath: Images.assetto,
-    title: 'Asseto Corsa',
+    title: 'Assetto Corsa',
     genre: 'Driving, Simulation',
     price: '\$ 25',
-    description: '',
+    description:
+        'Assetto Corsa v1.16 introduces the new "Laguna Seca" laser-scanned track, 7 new cars among which the eagerly awaited Alfa Romeo Giulia Quadrifoglio! Check the changelog for further info! ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.ac_min,
+      StoreGame.ac_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.ac_1,
+      MediaGame.ac_2,
+      MediaGame.ac_3,
+      MediaGame.ac_4,
+      MediaGame.ac_5,
+    ],
   ),
   Game(
     imagePath: Images.motogp,
     title: 'MotoGP 2024',
     genre: 'Motorbike, Race',
     price: '\$ 30',
-    description: '',
+    description:
+        'Rev up your engines, MotoGP™24 is back! Dive into the heart-pounding action of the 2024 season and immerse yourself in the thrills of unexplored landscapes, all thanks to the revolutionary Riders market! ',
     systemRequirements: [
-      'Minimum: ',
-      'Recommended: ',
+      StoreGame.motogp_min,
+      StoreGame.motogp_rec,
     ],
-    mediaImages: [],
+    mediaImages: [
+      MediaGame.motogp1,
+      MediaGame.motogp2,
+      MediaGame.motogp3,
+      MediaGame.motogp4,
+      MediaGame.motogp5,
+    ],
   ),
 ];
 

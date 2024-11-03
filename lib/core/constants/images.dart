@@ -42,6 +42,21 @@ class Images {
 }
 
 class MediaGame {
+  static const String motogp1 = 'assets/media/motogp/motogp1.jpg';
+  static const String motogp2 = 'assets/media/motogp/motogp2.jpg';
+  static const String motogp3 = 'assets/media/motogp/motogp3.jpg';
+  static const String motogp4 = 'assets/media/motogp/motogp4.jpg';
+  static const String motogp5 = 'assets/media/motogp/motogp5.jpg';
+  static const String ac_1 = 'assets/media/assetto/ac_1.jpg';
+  static const String ac_2 = 'assets/media/assetto/ac_2.jpg';
+  static const String ac_3 = 'assets/media/assetto/ac_3.jpg';
+  static const String ac_4 = 'assets/media/assetto/ac_4.jpg';
+  static const String ac_5 = 'assets/media/assetto/ac_5.jpg';
+  static const String f1_1 = 'assets/media/f1/f1_1.jpg';
+  static const String f1_2 = 'assets/media/f1/f1_2.jpg';
+  static const String f1_3 = 'assets/media/f1/f1_3.jpg';
+  static const String f1_4 = 'assets/media/f1/f1_4.jpg';
+  static const String f1_5 = 'assets/media/f1/f1_5.jpg';
   static const String payday3_1 = 'assets/media/payday3/payday1.jpg';
   static const String payday3_2 = 'assets/media/payday3/payday2.jpg';
   static const String payday3_3 = 'assets/media/payday3/payday3.jpg';

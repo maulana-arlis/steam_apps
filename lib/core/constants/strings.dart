@@ -556,4 +556,67 @@ Network: Broadband Internet connection
 Storage: 65 GB available space
 Additional Notes: DirectX11, DirectX12 supported
 ''';
+  static const String f1_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit Version 21H1 or newer
+Processor: Intel Core i3-2130 | Core i5-9600k (VR) or AMD FX 4300 | Ryzen 5 2600X (VR)
+Memory: 8 GB RAM
+Graphics: NVIDIA GTX 1060 (6GB) | GTX 1660Ti (VR) | RTX 2060 (RT) // AMD RX 480 (8GB) | RX 590 (VR) | 6700XT (RT) // Intel Arc A380 (VR/RT)
+DirectX: Version 12
+Network: Broadband Internet connection
+Storage: 100 GB available space
+Sound Card: Direct X Compatible
+VR Support: Steam VR. Keyboard and mouse required
+Additional Notes: GPU must support D3D_SHADER_MODEL_6_6.
+''';
+  static const String f1_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 64-bit Version 21H1 or newer
+Processor: Intel Core i5-9600k or AMD Ryzen 5 2600X
+Memory: 16 GB RAM
+Graphics: NVIDIA RTX 2070 (+VR) | RTX 3070 (RT) // AMD RX 6600XT | RX 6700XT (VR) | RX 6800 (RT) // Intel Arc A580 (VR/RT)
+DirectX: Version 12
+Network: Broadband Internet connection
+Storage: 100 GB available space
+Sound Card: Direct X Compatible
+VR Support: Meta Quest 2 + Link; Oculus Rift S; HTC Cosmos; HTC Vive Pro; Valve Index; HP Reverb G2
+Additional Notes: GPU must support D3D_SHADER_MODEL_6_6.
+''';
+  static const String ac_min = '''
+OS: Windows 7 Sp1 - 8 - 8.1 - 10
+Processor: AMD Athlon X2 2.8 GHZ, Intel Core 2 Duo 2.4 GHZ
+Memory: 2 GB RAM
+Graphics: DirectX 10.1 (e.g. AMD Radeon HD 6450, Nvidia GeForce GT 460)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 15 GB available space
+Sound Card: Integrated
+VR Support: SteamVR or Oculus PC. Keyboard or gamepad required
+''';
+  static const String ac_rec = '''
+OS: Windows 7 Sp1 - 8 - 8.1 - 10
+Processor: AMD Six-Core CPU, Intel Quad-Core CPU
+Memory: 6 GB RAM
+Graphics: DirectX 11 (e.g. AMD Radeon 290x, Nvidia GeForce GTX 970)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 30 GB available space
+Sound Card: Integrated
+''';
+  static const String motogp_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 x64
+Processor: Intel Core i5-4590 (4 * 3300) | AMD FX-8350 (4 * 4000) or equivalent
+Memory: 8 GB RAM
+Graphics: GeForce GTX 960 (4096 MB) | Radeon R9 285 (2048 MB)
+Storage: 24 GB available space
+''';
+  static const String motogp_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 x64
+Processor: Intel Core i3-10100 (4 * 3600) | AMD Ryzen 5 1500X (4 * 3500) or equivalent
+Memory: 8 GB RAM
+Graphics: GeForce RTX 2070 (8192 MB) | Radeon RX 5700 (8192 MB)
+Storage: 24 GB available space
+''';
 }
