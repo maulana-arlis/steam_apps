@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/colors.dart';
-import '../../../data/repository/repo_games.dart';
+import '../../../data/repository/games_repo.dart';
 import '../../main/game_detail_screen.dart';
 
 class LibraryGamesScreen extends StatefulWidget {

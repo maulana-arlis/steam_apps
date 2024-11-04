@@ -1,9 +1,9 @@
+// search_result.dart
 import 'package:flutter/material.dart';
 import 'package:steam_apps/data/store/store_repo.dart';
-import '../../core/constants/images.dart';
 import '../../core/constants/colors.dart';
-import '../../core/constants/strings.dart';
 import '../main/game_detail_store.dart';
+import '../../data/search/search_repo.dart';
 
 class SearchResultScreen extends StatelessWidget {
   final String searchQuery;
@@ -12,389 +12,24 @@ class SearchResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // List of all games (replace with actual data if available)
-    final List<Game> allGames = [
-      Game(
-        title: 'Hogwarts Legacy',
-        imagePath: Images.hogwarts,
-        description:
-            'Hogwarts Legacy is an immersive, open-world action RPG. Now you can take control of the action and be at the center of your own adventure in the wizarding world. ',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_rec,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'The Forest',
-        imagePath: Images.theforest,
-        description:
-            'As the lone survivor of a passenger jet crash, you find yourself in a mysterious forest battling to stay alive against a society of cannibalistic mutants. Build, explore, survive in this terrifying first person survival horror simulator. ',
-        mediaImages: [
-          MediaGame.theforest1,
-          MediaGame.theforest2,
-          MediaGame.theforest3,
-          MediaGame.theforest4,
-          MediaGame.theforest5,
-        ],
-        systemRequirements: [
-          StoreGame.theforest_min,
-          StoreGame.theforest_rec,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Ghost Tsushima',
-        imagePath: Images.got,
-        description:
-            'A storm is coming. Venture into the complete Ghost of Tsushima DIRECTOR’S CUT on PC; forge your own path through this open-world action adventure and uncover its hidden wonders. Brought to you by Sucker Punch Productions, Nixxes Software and PlayStation Studios. ',
-        mediaImages: [
-          MediaGame.got1,
-          MediaGame.got2,
-          MediaGame.got3,
-          MediaGame.got4,
-          MediaGame.got5,
-        ],
-        systemRequirements: [
-          StoreGame.got_min,
-          StoreGame.got_rec,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Dark Souls 3',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Black Wukong',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'CyberPunk',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Black Ops 6',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Witcher III',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'GTA 5',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'PayDay 3',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'The Forest',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'F1 2024',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Assetto Corsa',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'MotoGP 2024',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Dead Islands 2',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Left 4 Dead 2',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Days Gone',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'Forza Horizon 4',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'HellDivers 2',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-      Game(
-        title: 'GOW Ragnarok',
-        imagePath: Images.hogwarts,
-        description: '',
-        mediaImages: [
-          MediaGame.hogwarts1,
-          MediaGame.hogwarts2,
-          MediaGame.hogwarts3,
-          MediaGame.hogwarts4,
-          MediaGame.hogwarts5,
-        ],
-        systemRequirements: [
-          StoreGame.hogwarts_min,
-          StoreGame.hogwarts_min,
-        ],
-        genre: '',
-        price: '',
-      ),
-    ];
+    // Mengambil daftar semua game dari SearchRepo
+    final List<Game> allGames = SearchRepo.getAllGames();
 
-    // Filter the games based on the search query (case-insensitive)
+    // Filter game berdasarkan query pencarian (tidak peka huruf besar/kecil)
     final List<Game> filteredGames = allGames.where((game) {
       return game.title.toLowerCase().contains(searchQuery.toLowerCase());
     }).toList();
 
     return Scaffold(
-      backgroundColor: AppColors.appColors, // Set background color
+      backgroundColor: AppColors.appColors,
       appBar: AppBar(
-        backgroundColor: AppColors.bgColors, // Set top bar color
+        backgroundColor: AppColors.bgColors,
         title: Text(
           'Search Results for "$searchQuery"',
-          style: const TextStyle(
-              color: Colors.white), // Set title text color to white
+          style: const TextStyle(color: Colors.white),
         ),
         iconTheme: const IconThemeData(
-          color: Colors.white, // Set back icon color to white
+          color: Colors.white,
         ),
       ),
       body: filteredGames.isNotEmpty
@@ -410,7 +45,6 @@ class SearchResultScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 return GestureDetector(
                   onTap: () {
-                    // Navigate to GameDetailStore with the selected game
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -436,9 +70,7 @@ class SearchResultScreen extends StatelessWidget {
           : Center(
               child: Text(
                 'No games found for "$searchQuery"',
-                style: const TextStyle(
-                    fontSize: 18,
-                    color: Colors.white), // Set no results text color to white
+                style: const TextStyle(fontSize: 18, color: Colors.white),
               ),
             ),
     );
@@ -471,9 +103,10 @@ class GameCard extends StatelessWidget {
         Text(
           name,
           style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-              color: Colors.white), // Set game name color to white
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
           textAlign: TextAlign.center,
         ),
       ],
