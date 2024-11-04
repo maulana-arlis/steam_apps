@@ -51,170 +51,166 @@ class _GameDetailStoreState extends State<GameDetailStore> {
           ),
         ),
       ),
-      body: Stack(
+      body: Column(
         children: [
-          SingleChildScrollView(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Center(
-                  child: Column(
-                    children: [
-                      Image.asset(
-                        widget.game.imagePath,
-                        fit: BoxFit.cover,
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        widget.game.title,
-                        style: const TextStyle(
-                          fontSize: 24,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
+          Expanded(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Center(
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          widget.game.imagePath,
+                          fit: BoxFit.cover,
                         ),
-                      ),
-                      const SizedBox(height: 10),
-                    ],
+                        const SizedBox(height: 10),
+                        Text(
+                          widget.game.title,
+                          style: const TextStyle(
+                            fontSize: 24,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                      ],
+                    ),
                   ),
-                ),
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    _buildTab("About", 0),
-                    _buildTab("Media", 1),
-                    _buildTab("Analysis", 2),
-                  ],
-                ),
-                const SizedBox(height: 15),
-                if (selectedTab == 0) ...[
-                  Text(
-                    widget.game.description,
-                    style: const TextStyle(color: Colors.white, fontSize: 16),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _buildTab("About", 0),
+                      _buildTab("Media", 1),
+                      _buildTab("Analysis", 2),
+                    ],
                   ),
                   const SizedBox(height: 15),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          "More About this Game >",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 30),
-                  const Text(
-                    "SYSTEM REQUIREMENTS",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue,
+                  if (selectedTab == 0) ...[
+                    Text(
+                      widget.game.description,
+                      style: const TextStyle(color: Colors.white, fontSize: 16),
                     ),
-                  ),
-                  const SizedBox(height: 10),
-                  _buildRequirement("Minimum", isMinimumExpanded,
-                      widget.game.systemRequirements[0], () {
-                    setState(() {
-                      isMinimumExpanded = !isMinimumExpanded;
-                    });
-                  }),
-                  const SizedBox(height: 10),
-                  _buildRequirement("Recommended", isRecommendedExpanded,
-                      widget.game.systemRequirements[1], () {
-                    setState(() {
-                      isRecommendedExpanded = !isRecommendedExpanded;
-                    });
-                  }),
-                ] else if (selectedTab == 1) ...[
-                  widget.game.mediaImages.isNotEmpty
-                      ? GridView.builder(
-                          shrinkWrap: true,
-                          physics: const NeverScrollableScrollPhysics(),
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 1,
-                            crossAxisSpacing: 10,
-                            mainAxisSpacing: 10,
-                            childAspectRatio: 2,
-                          ),
-                          itemCount: widget.game.mediaImages.length,
-                          itemBuilder: (context, index) {
-                            return ClipRRect(
-                              borderRadius: BorderRadius.circular(10),
-                              child: Image.asset(
-                                widget.game.mediaImages[index],
-                                fit: BoxFit.cover,
-                              ),
-                            );
-                          },
-                        )
-                      : const Center(
-                          child: Text(
-                            'No media available',
-                            style: TextStyle(color: Colors.white),
+                    const SizedBox(height: 15),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            "More About this Game >",
+                            style: TextStyle(color: Colors.grey),
                           ),
                         ),
-                ] else if (selectedTab == 2) ...[
-                  const GameDetailAnalysisTab(),
-                ],
-                const SizedBox(height: 80), // Tambahan space di bagian bawah
-              ],
-            ),
-          ),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: Container(
-              color: AppColors.bgColors,
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed: () {
-                        // Fungsi untuk menambahkan ke keranjang
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        padding: const EdgeInsets.symmetric(vertical: 12.0),
-                      ),
-                      child: const Text(
-                        "Add to Cart",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 30),
+                    const Text(
+                      "SYSTEM REQUIREMENTS",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue,
                       ),
                     ),
-                  ),
-                  const SizedBox(width: 10),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        // Fungsi untuk ikon keranjang
-                      },
-                      icon: const Icon(
-                        Icons.shopping_cart,
-                        color: Colors.white,
-                      ),
-                      padding: const EdgeInsets.all(12.0),
-                    ),
-                  ),
+                    const SizedBox(height: 10),
+                    _buildRequirement("Minimum", isMinimumExpanded,
+                        widget.game.systemRequirements[0], () {
+                      setState(() {
+                        isMinimumExpanded = !isMinimumExpanded;
+                      });
+                    }),
+                    const SizedBox(height: 10),
+                    _buildRequirement("Recommended", isRecommendedExpanded,
+                        widget.game.systemRequirements[1], () {
+                      setState(() {
+                        isRecommendedExpanded = !isRecommendedExpanded;
+                      });
+                    }),
+                  ] else if (selectedTab == 1) ...[
+                    widget.game.mediaImages.isNotEmpty
+                        ? GridView.builder(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 1,
+                              crossAxisSpacing: 10,
+                              mainAxisSpacing: 10,
+                              childAspectRatio: 2,
+                            ),
+                            itemCount: widget.game.mediaImages.length,
+                            itemBuilder: (context, index) {
+                              return ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.asset(
+                                  widget.game.mediaImages[index],
+                                  fit: BoxFit.cover,
+                                ),
+                              );
+                            },
+                          )
+                        : const Center(
+                            child: Text(
+                              'No media available',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                  ] else if (selectedTab == 2) ...[
+                    const GameDetailAnalysisTab(),
+                  ],
                 ],
               ),
+            ),
+          ),
+          Container(
+            color: AppColors.bgColors,
+            padding:
+                const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Fungsi untuk menambahkan ke keranjang
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                      ),
+                      padding: const EdgeInsets.symmetric(vertical: 12.0),
+                    ),
+                    child: const Text(
+                      "Add to Cart",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                  child: IconButton(
+                    onPressed: () {
+                      // Fungsi untuk ikon keranjang
+                    },
+                    icon: const Icon(
+                      Icons.shopping_cart,
+                      color: Colors.white,
+                    ),
+                    padding: const EdgeInsets.all(12.0),
+                  ),
+                ),
+              ],
             ),
           ),
         ],

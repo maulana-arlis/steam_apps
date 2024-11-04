@@ -40,6 +40,7 @@ class Images {
   static const String helldivers = 'assets/images/hellldiver_header.jpg';
   static const String godofwar = 'assets/images/godofwar_header.jpg';
 
+  // ignore: prefer_typing_uninitialized_variables
   static var defaultImage;
 }
 
