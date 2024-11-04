@@ -236,7 +236,8 @@ class SearchRepo {
     Game(
       title: 'Assetto Corsa',
       imagePath: Images.assetto,
-      description: '',
+      description:
+          'Assetto Corsa v1.16 introduces the new "Laguna Seca" laser-scanned track, 7 new cars among which the eagerly awaited Alfa Romeo Giulia Quadrifoglio! Check the changelog for further info! ',
       mediaImages: [
         MediaGame.ac_1,
         MediaGame.ac_2,
@@ -254,7 +255,8 @@ class SearchRepo {
     Game(
       title: 'MotoGP 2024',
       imagePath: Images.motogp,
-      description: '',
+      description:
+          'Rev up your engines, MotoGP™24 is back! Dive into the heart-pounding action of the 2024 season and immerse yourself in the thrills of unexplored landscapes, all thanks to the revolutionary Riders market! ',
       mediaImages: [
         MediaGame.motogp1,
         MediaGame.motogp2,
@@ -272,7 +274,8 @@ class SearchRepo {
     Game(
       title: 'Dead Islands 2',
       imagePath: Images.deadisland2,
-      description: '',
+      description:
+          'A deadly virus is spreading across Los Angeles, turning its inhabitants into zombies. Bitten, infected, but more than just immune, uncover the truth behind the outbreak and discover who - or what - you are. Survive, evolve and become the ultimate Zombie Slayer. ',
       mediaImages: [
         MediaGame.deadisland1,
         MediaGame.deadisland2,
@@ -290,7 +293,8 @@ class SearchRepo {
     Game(
       title: 'Left 4 Dead 2',
       imagePath: Images.l4d2,
-      description: '',
+      description:
+          'Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to...',
       mediaImages: [
         MediaGame.l4d2_1,
         MediaGame.l4d2_2,
@@ -308,7 +312,8 @@ class SearchRepo {
     Game(
       title: 'Days Gone',
       imagePath: Images.daysgone,
-      description: '',
+      description:
+          'Ride and fight into a deadly, post pandemic America. Play as Deacon St. John, a drifter and bounty hunter who rides the broken road, fighting to survive while searching for a reason to live in this open-world action-adventure game. ',
       mediaImages: [
         MediaGame.daysgone1,
         MediaGame.daysgone2,
@@ -326,7 +331,8 @@ class SearchRepo {
     Game(
       title: 'Forza Horizon 4',
       imagePath: Images.forza,
-      description: '',
+      description:
+          'Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. ',
       mediaImages: [
         MediaGame.forza1,
         MediaGame.forza2,
@@ -344,7 +350,8 @@ class SearchRepo {
     Game(
       title: 'HellDivers 2',
       imagePath: Images.helldivers,
-      description: '',
+      description:
+          'Dynamic seasons change everything at the world’s greatest automotive festival. Go it alone or team up with others to explore beautiful and historic Britain in a shared open world. ',
       mediaImages: [
         MediaGame.helldivers1,
         MediaGame.helldivers2,
@@ -362,7 +369,8 @@ class SearchRepo {
     Game(
       title: 'GOW Ragnarok',
       imagePath: Images.godofwar,
-      description: '',
+      description:
+          'Kratos and Atreus embark on a mythic journey for answers before Ragnarök arrives – now on PC. ',
       mediaImages: [
         MediaGame.gow1,
         MediaGame.gow2,
