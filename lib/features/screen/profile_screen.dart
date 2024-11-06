@@ -1,10 +1,58 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/colors.dart';
 import '../../core/constants/images.dart';
-import '../widgets/game_card.dart';
+import '../../data/model/game_card.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
+
+  @override
+  _ProfileScreenState createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
+  String _userName = 'Maulana Arlis';
+  String _userNickname = 'Rytex';
+
+  // Text editing controller for the name input
+  final TextEditingController _nameController = TextEditingController();
+
+  void _editName() {
+    // Set initial value of the controller
+    _nameController.text = _userName;
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Edit Name'),
+          content: TextField(
+            controller: _nameController,
+            decoration: const InputDecoration(
+              hintText: 'Enter your new name',
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Close dialog
+              },
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  _userName = _nameController.text;
+                });
+                Navigator.of(context).pop(); // Close dialog
+              },
+              child: const Text('Save'),
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -24,24 +72,24 @@ class ProfileScreen extends StatelessWidget {
                       backgroundImage: AssetImage(Images.avatar),
                     ),
                     const SizedBox(height: 16),
-                    const Text(
-                      'Maulana Arlis',
-                      style: TextStyle(
+                    Text(
+                      _userName,
+                      style: const TextStyle(
                         color: Colors.white,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     const SizedBox(height: 8),
-                    const Text(
-                      'Rytex',
-                      style: TextStyle(
+                    Text(
+                      _userNickname,
+                      style: const TextStyle(
                         color: Colors.grey,
                         fontSize: 16,
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: _editName,
                       child: const Text(
                         'Edit',
                         style: TextStyle(color: Colors.blueAccent),

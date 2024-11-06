@@ -1,9 +1,12 @@
-// ignore_for_file: library_private_types_in_public_api
+// game_store_detail.dart
 
 import 'package:flutter/material.dart';
+import 'package:steam_apps/features/widgets/checkout.dart';
 import '../../data/store/store_repo.dart';
 import '../../core/constants/colors.dart';
 import '../../data/analysis_game.dart';
+import '../../data/cart_data.dart';
+import '../../data/model/cart_model.dart';
 
 class GameDetailStore extends StatefulWidget {
   final Game game;
@@ -175,7 +178,18 @@ class _GameDetailStoreState extends State<GameDetailStore> {
                 Expanded(
                   child: ElevatedButton(
                     onPressed: () {
-                      // Fungsi untuk menambahkan ke keranjang
+                      cartData.addItem(
+                        CartItem(
+                          title: widget.game.title,
+                          imagePath: widget.game.imagePath,
+                          price: widget.game.price,
+                        ),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text("${widget.game.title} added to cart!"),
+                        ),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
@@ -201,7 +215,7 @@ class _GameDetailStoreState extends State<GameDetailStore> {
                   ),
                   child: IconButton(
                     onPressed: () {
-                      // Fungsi untuk ikon keranjang
+                      showPaymentBottomSheet(context, cartData.items);
                     },
                     icon: const Icon(
                       Icons.shopping_cart,

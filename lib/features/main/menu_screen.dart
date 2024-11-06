@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:steam_apps/data/cart_data.dart';
 import '../screen/home_screen.dart';
 import '../screen/profile_screen.dart';
 import '../screen/search_screen.dart';
 import '../screen/more_screen.dart';
 import '../../core/constants/colors.dart';
 import '../../core/constants/images.dart';
-import '../widgets/payment.dart';
+import '../widgets/checkout.dart';
 
 class MainMenuScreen extends StatefulWidget {
   const MainMenuScreen({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _MainMenuScreenState createState() => _MainMenuScreenState();
 }
 
@@ -60,7 +60,7 @@ class _MainMenuScreenState extends State<MainMenuScreen> {
                 onPressed: () {
                   showPaymentBottomSheet(
                     context,
-                    _walletBalance,
+                    cartData.items, // Pass wallet balance here
                   );
                 },
               ),

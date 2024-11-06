@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import '../../core/constants/colors.dart';
-import '../widgets/game_card.dart';
+import '../../data/model/game_card.dart';
 import '../../data/store/store_repo.dart'; // Mengimpor store_repo.dart
 import '../main/game_detail_store.dart'; // Mengimpor halaman detail game
 
