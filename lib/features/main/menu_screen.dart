@@ -12,6 +12,7 @@ class MainMenuScreen extends StatefulWidget {
   const MainMenuScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _MainMenuScreenState createState() => _MainMenuScreenState();
 }
 

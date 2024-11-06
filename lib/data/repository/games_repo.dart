@@ -16,6 +16,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.forza5,
     ],
     'detail': DetailGame.fh4,
+    'systemRequirements': {
+      'Minimum': StoreGame.forza4_min,
+      'Recommended': StoreGame.forza4_rec,
+    },
   },
   {
     'title': 'Stray',
@@ -30,6 +34,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.stray5,
     ],
     'detail': DetailGame.stray,
+    'systemRequirements': {
+      'Minimum': StoreGame.stray_min,
+      'Recommended': StoreGame.stay_rec,
+    },
   },
   {
     'title': 'Elden Ring',
@@ -44,6 +52,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.eldenring5,
     ],
     'detail': DetailGame.eldenring,
+    'systemRequirements': {
+      'Minimum': StoreGame.elden_min,
+      'Recommended': StoreGame.elden_rec,
+    },
   },
   {
     'title': 'Red Dead 2',
@@ -58,6 +70,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.rdr5,
     ],
     'detail': DetailGame.rdr2,
+    'systemRequirements': {
+      'Minimum': StoreGame.rdr_min,
+      'Recommended': StoreGame.rdr_rec,
+    },
   },
   {
     'title': 'Metro Exodus',
@@ -72,6 +88,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.exodus5,
     ],
     'detail': DetailGame.exodus,
+    'systemRequirements': {
+      'Minimum': StoreGame.exodus_min,
+      'Recommended': StoreGame.exodus_rec,
+    },
   },
   {
     'title': 'GR Wildlands',
@@ -86,6 +106,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.wildlands5,
     ],
     'detail': DetailGame.wildlands,
+    'systemRequirements': {
+      'Minimum': StoreGame.wildlands_min,
+      'Recommended': StoreGame.wildlands_rec,
+    },
   },
   {
     'title': 'GR Breakpoints',
@@ -100,6 +124,10 @@ final List<Map<String, dynamic>> gamesRepository = [
       MediaGame.breakpoint5,
     ],
     'detail': DetailGame.breakpoint,
+    'systemRequirements': {
+      'Minimum': StoreGame.breakpoint_min,
+      'Recommended': StoreGame.breakpoint_rec,
+    },
   },
   {
     'title': 'Ready or Not',

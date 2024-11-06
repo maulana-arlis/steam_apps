@@ -36,7 +36,7 @@ void showPaymentBottomSheet(BuildContext context, List<CartItem> items) {
                           style: const TextStyle(color: Colors.white),
                         ),
                         subtitle: Text(
-                          "${item.price}",
+                          item.price,
                           style: const TextStyle(color: Colors.white70),
                         ),
                         trailing: IconButton(

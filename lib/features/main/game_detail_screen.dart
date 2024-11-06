@@ -70,6 +70,8 @@ class _GameDetailScreenState extends State<GameDetailScreen>
   }
 
   Widget _buildAboutTab() {
+    final systemRequirements = widget.game['systemRequirements'] ?? {};
+
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -123,12 +125,16 @@ class _GameDetailScreenState extends State<GameDetailScreen>
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(),
-            _buildRequirement("Minimum",
-                "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 10, 64-bit Windows 11\nProcessor: AMD Ryzen 5-1600 / Intel Core i5-7600K\nMemory: 8 GB RAM\nGraphics: Nvidia GTX 1060 6GB or better\nDirectX: Version 11\nStorage: 60 GB available space"),
-            const SizedBox(),
-            _buildRequirement("Recommended",
-                "Requires a 64-bit processor and operating system\nOS: 64-bit Windows 10, 64-bit Windows 11\nProcessor: AMD Ryzen 5-1600 / Intel Core i5-7600K\nMemory: 8 GB RAM\nGraphics: Nvidia GTX 1060 6GB or better\nDirectX: Version 11\nStorage: 60 GB available space"),
+            const SizedBox(height: 8),
+            _buildRequirement(
+                "Minimum",
+                systemRequirements['Minimum'] ??
+                    'No minimum requirements specified.'),
+            const SizedBox(height: 8),
+            _buildRequirement(
+                "Recommended",
+                systemRequirements['Recommended'] ??
+                    'No recommended requirements specified.'),
           ],
         ),
       ),

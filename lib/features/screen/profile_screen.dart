@@ -7,12 +7,13 @@ class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
   String _userName = 'Maulana Arlis';
-  String _userNickname = 'Rytex';
+  final String _userNickname = 'Rytex';
 
   // Text editing controller for the name input
   final TextEditingController _nameController = TextEditingController();

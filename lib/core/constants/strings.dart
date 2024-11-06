@@ -732,4 +732,280 @@ DirectX: Version 12
 Storage: 190 GB available space
 Additional Notes: Windows version 2004 2020-05-27 19041. 6GB GPU is required
 ''';
+  static const String stray_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i5-2300 | AMD FX-6350
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 650 Ti, 2 GB | AMD Radeon R7 360, 2 GB
+DirectX: Version 12
+Storage: 10 GB available space
+''';
+  static const String stay_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i5-8400 | AMD Ryzen 5 2600
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 780, 3 GB | AMD Radeon R9 290X, 4 GB
+DirectX: Version 12
+Storage: 10 GB available space
+''';
+  static const String elden_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: INTEL CORE I5-8400 or AMD RYZEN 3 3300X
+Memory: 12 GB RAM
+Graphics: NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB
+DirectX: Version 12
+Storage: 60 GB available space
+Sound Card: Windows Compatible Audio Device
+''';
+  static const String elden_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10/11
+Processor: INTEL CORE I7-8700K or AMD RYZEN 5 3600X
+Memory: 16 GB RAM
+Graphics: NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB
+DirectX: Version 12
+Storage: 60 GB available space
+Sound Card: Windows Compatible Audio Device
+''';
+  static const String rdr_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 - 64-bit
+Processor: Intel® Core™ i5-2500K / AMD FX-6300
+Memory: 8 GB RAM
+Graphics: Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB
+Network: Broadband Internet connection
+Storage: 150 GB available space
+Sound Card: Direct X Compatible
+''';
+  static const String rdr_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 - 64-bit
+Processor: Intel® Core™ i7-4770K / AMD Ryzen 5 1500X
+Memory: 12 GB RAM
+Graphics: Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB
+Network: Broadband Internet connection
+Storage: 150 GB available space
+Sound Card: Direct X Compatible
+''';
+  static const String exodus_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 7/8/10
+Processor: Intel Core i5-4440 or equivalent
+Memory: 8 GB RAM
+Graphics: GeForce GTX 670 / GeForce GTX 1050 / AMD Radeon HD 7870
+DirectX: Version 11
+Storage: 59 GB available space
+Sound Card: DirectX Compatible Sound Card
+Additional Notes: Enhanced Edition requires Nvidia RTX or AMD RX GPU
+''';
+  static const String exodus_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i7-4770k or equivalent
+Memory: 8 GB RAM
+Graphics: GeForce GTX 1070 / GeForce RTX 2060 / AMD RX VEGA 56
+DirectX: Version 12
+Storage: 59 GB available space
+Sound Card: DirectX Compatible Sound Card
+Additional Notes: Enhanced Edition requires Nvidia RTX or AMD RX GPU
+''';
+  static const String readyornot_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10, Windows 11
+Processor: Intel Core i5-4430 / AMD FX-6300
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB
+DirectX: Version 11
+Storage: 60 GB available space
+''';
+  static const String readyornot_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10
+Processor: Intel Core i7-4770k or equivalent
+Memory: 8 GB RAM
+Graphics: GeForce GTX 1070 / GeForce RTX 2060 / AMD RX VEGA 56
+DirectX: Version 12
+Storage: 59 GB available space
+Sound Card: DirectX Compatible Sound Card
+Additional Notes: Enhanced Edition requires Nvidia RTX or AMD RX GPU
+''';
+  static const String wd1_min = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Intel Core 2 Quad Q8400 @ 2.66Ghz or AMD Phenom II X4 940 @ 3.0Ghz
+Memory: 6 GB RAM
+Graphics: DirectX 11 graphics card with 1 GB Video RAM - Nvidia Geforce GTX 460 or AMD Radeon HD 5770
+DirectX: Version 11
+Storage: 25 GB available space
+Sound Card: DirectX 9.0c Compatible Sound Card with Latest Drivers
+Additional Notes: Broadband connection and service required for multiplayer mode. Supported Video Cards at Time of Release: nVidia GeForce GTX460 or better, GT500, GT600, GT700 series; AMD Radeon HD5850 or better, HD6000, HD7000, R7 and R9 series Intel® Iris™ Pro HD 5200
+''';
+  static const String wd1_rec = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Eight core - Intel Core i7-3770 @3.5 GHz or AMD FX-8350 X8 @ 4 GHz
+Memory: 8 GB RAM
+Graphics: DirectX 11 graphics card with 2 GB Video RAM - Nvidia Geforce GTX 560 ti or AMD Radeon HD 7850
+DirectX: Version 11
+Storage: 25 GB available space
+Sound Card: DirectX 9.0c Compatible Sound Card with Latest Drivers
+Additional Notes: Broadband connection and service required for multiplayer mode. Supported Video Cards at Time of Release: nVidia GeForce GTX460 or better, GT500, GT600, GT700 series; AMD Radeon HD5850 or better, HD6000, HD7000, R7 and R9 series Intel® Iris™ Pro HD 5200
+''';
+  static const String wd2_min = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better
+Memory: 6 GB RAM
+Graphics: NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870, with 2 GB VRAM or better - See supported List*
+Network: Broadband Internet connection
+Storage: 27 GB available space
+Sound Card: DirectX compatible using the latest drivers
+''';
+  static const String wd2_rec = '''
+OS: Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS
+Processor: Intel Core i5 3470 @ 3.2 GHz, AMD FX 8120 @ 3.9 GHz
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 780 | AMD Radeon R9 290, with 3GB VRAM or better - See supported List*
+Network: Broadband Internet connection
+Storage: 27 GB available space
+Sound Card: DirectX-compatible using the latest drivers
+''';
+  static const String outlast_min = '''
+OS: Windows XP / Vista / 7 / 8 - 64 bits *
+Processor: 2.2 GHz Dual Core CPU
+Memory: 2 GB RAM
+Graphics: 512 MB NVIDIA GeForce 9800GTX / ATI Radeon HD 3xxx series
+DirectX: Version 9.0c
+Network: Broadband Internet connection
+Storage: 5 GB available space
+Sound Card: DirectX Compatible
+''';
+  static const String outlast_rec = '''
+OS: Windows Vista / 7 / 8 - 64 bits
+Processor: 2.8 GHz Quad Core CPU
+Memory: 3 GB RAM
+Graphics: 1GB NVIDIA GTX 460 / ATI Radeon HD 6850 or better
+DirectX: Version 9.0c
+Network: Broadband Internet connection
+Storage: 5 GB available space
+Sound Card: DirectX Compatible
+''';
+  static const String oulast2_min = '''
+OS: Windows Vista / 7 / 8 / 10, 64-bits
+Processor: Intel Core i3-530
+Memory: 4 GB RAM
+Graphics: 1GB VRAM, NVIDIA Geforce GTX 260 / ATI Radeon HD 4870
+DirectX: Version 10
+Storage: 30 GB available space
+Sound Card: DirectX Compatible
+Additional Notes: Targetting 720p @ 30 fps
+''';
+  static const String oulast2_rec = '''
+OS: Windows Vista / 7 / 8 / 10, 64-bits
+Processor: Intel Core i5
+Memory: 8 GB RAM
+Graphics: 1.5GB VRAM, NVIDIA Geforce GTX 660 / ATI Radeon HD 7850
+DirectX: Version 11
+Storage: 30 GB available space
+Sound Card: DirectX Compatible
+Additional Notes: Targetting 1080p @ 60 fps
+''';
+  static const String farcry3_min = '''
+OS:Windows XP, Windows Vista
+Processor:Intel Core®2 Duo E6700 @ 2.6 GHz or AMD Athlon64 X2 6000+ @ 3.0Ghz or better
+Memory:4 GB RAM
+Graphics:512MB Video RAM (1GB Video RAM), DirectX9c (DirectX11) Shader Model 3.0 (Shader Model 5.0)
+DirectX®:9.0c
+Hard Drive:15 GB HD space
+Sound:DirectX Compatible (Recommended Surround Sound 5.1 capable)
+Other Requirements:Broadband Internet connection
+''';
+  static const String farcry3_rec = '''
+OS:Windows XP, Windows Vista
+Processor:Intel Core®2 Duo E6700 @ 2.6 GHz or AMD Athlon64 X2 6000+ @ 3.0Ghz or better
+Memory:4 GB RAM
+Graphics:512MB Video RAM (1GB Video RAM), DirectX9c (DirectX11) Shader Model 3.0 (Shader Model 5.0)
+DirectX®:11
+Hard Drive:15 GB HD space
+Sound:DirectX Compatible (Recommended Surround Sound 5.1 capable)
+Other Requirements:Broadband Internet connection
+''';
+  static const String farcry4_min = '''
+OS: Windows 10 (64-bit)
+Processor: 2.6 GHz Intel® Core™ i5-750 or 3.2 GHz AMD Phenom™ II X4 955
+Memory: 4 GB RAM
+Graphics: NVIDIA GeForce GTX 460 or AMD Radeon HD5850 (1 GB VRAM)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 30 GB available space
+Sound Card: DirectX-compatible (5.1 surround sound recommended)
+''';
+  static const String farcry4_rec = '''
+OS: Windows 10 (64-bit)
+Processor: 2.5 GHz Intel® Core™ i5-2400S or 4.0 GHz AMD FX-8350 or better
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 680 or AMD Radeon R9 290X or better (2 GB VRAM)
+DirectX: Version 11
+Network: Broadband Internet connection
+Storage: 30 GB available space
+Sound Card: DirectX-compatible (5.1 surround sound recommended)
+''';
+  static const String farcry5_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 (64-bit versions only)
+Processor: Intel Core i5-2400 @ 3.1 GHz or AMD FX-6300 @ 3.5 GHz or equivalent
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 670 or AMD R9 270 (2GB VRAM with Shader Model 5.0 or better)
+DirectX: Version 9.0c
+Network: Broadband Internet connection
+Storage: 40 GB available space
+Additional Notes: Game contains EasyAntiCheat anti-cheat technology, and Denuvo and VMProtect anti-tamper technology.
+''';
+  static const String farcry5_rec = '''
+Requires a 64-bit processor and operating system
+OS: Windows 10 (64-bit versions only)
+Processor: Intel Core i7-4770 @ 3.4 GHz or AMD Ryzen 5 1600 @ 3.2 GHz or equivalent
+Memory: 8 GB RAM
+Graphics: NVIDIA GeForce GTX 970 or AMD R9 290X (4GB VRAM with Shader Model 5.0 or better)
+DirectX: Version 9.0c
+Network: Broadband Internet connection
+Storage: 40 GB available space
+Additional Notes: Game contains EasyAntiCheat anti-cheat technology, and Denuvo and VMProtect anti-tamper technology.
+''';
+  static const String dl_min = '''
+OS: Windows® 7 64-bit / Windows® 8 64-bit / Windows® 8.1 64-bit
+Processor: Intel® Core™ i5-2500 @3.3 GHz / AMD FX-8320 @3.5 GHz
+Memory: 4 GB RAM DDR3
+Hard Drive: 40 GB free space
+Graphics: NVIDIA® GeForce® GTX 560 / AMD Radeon™ HD 6870 (1GB VRAM)
+DirectX®: Version 11
+Sound: DirectX® compatible
+Additional Notes: Laptop versions of graphics cards may work but are NOT officially supported.
+''';
+  static const String dl_rec = '''
+OS: Windows® 7 64-bit / Windows® 8 64-bit / Windows® 8.1 64-bit
+Processor: Intel® Core™ i5-4670K @3.4 GHz / AMD FX-8350 @4.0 GHz
+Memory: 8 GB RAM DDR3
+Hard Drive: 40 GB free space
+Graphics: NVIDIA® GeForce® GTX 780 / AMD Radeon™ R9 290 (2GB VRAM)
+DirectX®: Version 11
+Sound: DirectX® compatible
+Additional Notes: Laptop versions of graphics cards may work but are NOT officially supported.
+''';
+  static const String dl2_min = '''
+Requires a 64-bit processor and operating system
+OS: Windows® 7
+Processor: Intel Core i3-9100 / AMD Ryzen 3 2300X
+Memory: 8 GB RAM
+Graphics: NVIDIA® GeForce® GTX 1050 Ti / AMD Radeon™ RX 560 (4GB VRAM)
+Storage: 60 GB available space
+''';
+  static const String dl2_rec = ''''
+Requires a 64-bit processor and operating system
+OS: Windows® 10
+Processor: AMD / Intel CPU running at 3.6 GHz or higher: AMD Ryzen 5 3600X or Intel i5-8600K or newer
+Memory: 16 GB RAM
+Graphics: NVIDIA® GeForce RTX™ 2060 6GB or AMD RX Vega 56 8GB or newer
+Storage: 60 GB available space
+''';
 }

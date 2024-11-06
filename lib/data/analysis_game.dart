@@ -104,7 +104,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "Arlis Schumacher",
+                          "Arlis Raikkonen",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -143,7 +143,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     SizedBox(height: 8),
                     // Teks ulasan
                     Text(
-                      "Good game, it has some defects but it has more qualities than defects.",
+                      "GG",
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.white70,
@@ -177,7 +177,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "Maul Raikkonen",
+                          "Maul Lauda",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -250,7 +250,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "Hari Versteppen",
+                          "Hari Schumacher",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
@@ -289,7 +289,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     SizedBox(height: 8),
                     // Teks ulasan
                     Text(
-                      "GG",
+                      "Good game, it has some defects but it has more qualities than defects.",
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.white70,
@@ -323,7 +323,7 @@ class GameDetailAnalysisTab extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "Tyo Norris",
+                          "Tyo Verstappen",
                           style: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
