@@ -48,3 +48,4 @@ Pastikan Anda telah menginstal [Flutter](https://flutter.dev/docs/get-started/in
 
 - Aplikasi ini menggunakan data statis dan belum terintegrasi dengan database.
 - Sebelumnya memohon maaf kepada om Gaben karena memakai nama perusahaannya tanpa ijin
+- Terimakasih kepada GPT untuk membantu membuat aplikasinya
